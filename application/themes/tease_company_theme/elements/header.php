@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <?php Loader::element('header_required'); ?>
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css">
 
     <script>
@@ -24,5 +25,31 @@
 </head>
 
 <body class="<?php echo $c->getPageWrapperClass()?>">
-    <header>
+    <header id="header">
+        <div class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 text-center">
+                        <img src="/images/logos/icon.svg" alt="Tease + Company Logo" />
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <div class="social">
+                            <span class="fa fa-instagram"></span>
+                            <span class="fa fa-facebook"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+            $bt = BlockType::getByHandle('autonav');
+            $bt->controller->displayPages = 'top';
+            $bt->controller->displayPagesCID = '';
+            $bt->controller->orderBy = 'display_asc';
+            $bt->controller->displaySubPages = 'all';
+            $bt->controller->displaySubPageLevels = 'all';
+            $bt->controller->displaySubPageLevelsNum = '';
+            $bt->render('templates/site_nav');
+        ?>
     </header>
