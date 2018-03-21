@@ -1,6 +1,9 @@
 config/site.php
-files/cache/*
-files/tmp/*
+application/files/cache/**/*
+application/files/tmp/**/*
 .htaccess
+.sass-cache/
+
+node_modules
 
 application/config/database.php

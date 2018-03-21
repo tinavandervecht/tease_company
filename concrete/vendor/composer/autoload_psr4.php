@@ -65,6 +65,7 @@ return array(
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'DoctrineXml\\' => array($vendorDir . '/concrete5/doctrine-xml/src'),
+    'Concrete\\Tests\\' => array($baseDir . '/tests/tests'),
     'Concrete\\Core\\' => array($baseDir . '/concrete/src'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'C5TL\\' => array($vendorDir . '/mlocati/concrete5-translation-library/src'),
