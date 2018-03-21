@@ -1,9 +1,17 @@
-config/site.php
-application/files/cache/**/*
-application/files/tmp/**/*
-.htaccess
-.sass-cache/
+/application/files/*
+!/application/files/index.html
 
+/concrete/composer.lock
+/concrete/vendor
+
+/updates/*
+/concrete/packages/*
+/application/languages/*
+
+.htaccess
+error_log
+.sass-cache/
 node_modules
 
+application/config/site.php
 application/config/database.php

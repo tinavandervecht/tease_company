@@ -1,36 +1,28 @@
-<?php defined('C5_EXECUTE') or die("Access Denied.");
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-$this->inc('elements/header_top.php');
+<!DOCTYPE html>
+<html lang="<?php echo Localization::activeLanguage() ?>">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <?php Loader::element('header_required'); ?>
 
-$as = new GlobalArea('Header Search');
-$blocks = $as->getTotalBlocksInArea();
-$displayThirdColumn = $blocks > 0 || $c->isEditMode();
-?>
+    <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css">
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-xs-6">
-                <?php
-                $a = new GlobalArea('Header Site Title');
-                $a->display();
-                ?>
-            </div>
-            <div class="<?php echo ($displayThirdColumn) ? 'col-sm-5 col-xs-6' : 'col-sm-8 col-xs-6' ?>">
-                <?php
-                $a = new GlobalArea('Header Navigation');
-                $a->display();
-                ?>
-            </div>
-            <?php
-            if ($displayThirdColumn) {
-                ?>
-                <div class="col-sm-3 col-xs-12">
-                    <?php $as->display(); ?>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</header>
+    <script>
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style');
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            );
+            document.querySelector('head').appendChild(msViewportStyle);
+        }
+    </script>
+</head>
+
+<body class="<?php echo $c->getPageWrapperClass()?>">
+    <header>
+    </header>
