@@ -10,6 +10,7 @@ application/languages/*
 
 application/themes/tease_company_theme/js/*
 application/themes/tease_company_theme/css/*
+application/config/*
 
 .htaccess
 error_log
