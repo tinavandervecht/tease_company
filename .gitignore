@@ -1,12 +1,15 @@
-/application/files/*
-!/application/files/index.html
+application/files/**/**/*
+!application/files/index.html
 
-/concrete/composer.lock
-/concrete/vendor
+concrete/composer.lock
+concrete/vendor
 
-/updates/*
-/concrete/packages/*
-/application/languages/*
+updates/*
+concrete/packages/*
+application/languages/*
+
+application/themes/tease_company_theme/js/*
+application/themes/tease_company_theme/css/*
 
 .htaccess
 error_log
