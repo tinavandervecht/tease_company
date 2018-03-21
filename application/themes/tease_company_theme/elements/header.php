@@ -31,12 +31,18 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8 text-center">
-                        <img src="/images/logos/icon.svg" alt="Tease + Company Logo" />
+                        <div class="logo_icon">
+                            <img src="/images/logos/icon.svg" alt="Tease + Company Logo" />
+                        </div>
                     </div>
                     <div class="col-md-2 text-right">
-                        <div class="social">
-                            <span class="fa fa-instagram"></span>
-                            <span class="fa fa-facebook"></span>
+                        <div class="social_icons">
+                            <a href="" target="_blank">
+                                <span class="fa fa-instagram fa-lg"></span>
+                            </a>
+                            <a href="" target="_blank">
+                                <span class="fa fa-facebook fa-lg"></span>
+                            </a>
                         </div>
                     </div>
                 </div>

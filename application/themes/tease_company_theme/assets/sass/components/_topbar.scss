@@ -1,0 +1,24 @@
+.top_bar {
+    background: $pink;
+    padding:10px 0;
+
+    .logo_icon {
+        background:#FFFFFF;
+        width:30px;
+        height:30px;
+        margin:0 auto;
+        @include border-radius(50%);
+
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+    
+    .social_icons {
+        margin-top:5px;
+        a {
+            margin:0 10px;
+        }
+    }
+}
