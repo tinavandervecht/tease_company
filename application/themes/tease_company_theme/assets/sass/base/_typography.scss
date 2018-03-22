@@ -1,9 +1,7 @@
 a {
-    color:$navy;
     text-decoration:none;
-
+    @include transition(0.4s);
     &:hover, &:focus {
-        color:$navy;
         text-decoration:none;
     }
 }

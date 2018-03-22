@@ -1,11 +1,11 @@
 .top_bar {
     background: $pink;
-    padding:10px 0;
+    padding:$spacing 0;
 
     .logo_icon {
         background:#FFFFFF;
-        width:30px;
-        height:30px;
+        width:$spacing * 3;
+        height:$spacing * 3;
         margin:0 auto;
         @include border-radius(50%);
 
@@ -16,9 +16,9 @@
     }
     
     .social_icons {
-        margin-top:5px;
+        margin-top:$spacing / 2;
         a {
-            margin:0 10px;
+            margin:0 $spacing;
         }
     }
 }
