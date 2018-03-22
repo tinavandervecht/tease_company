@@ -34,7 +34,7 @@ $secondhalf = array_slice($navItems, $len / 2);
                 <a
                     title="<?php echo $ni->name; ?>"
                     href="<?php echo $ni->url; ?>"
-                    classes="<?php echo $ni->classes; ?>"
+                    class="<?php echo $ni->classes; ?>"
                 >
                     <?php echo $ni->name; ?>
                 </a>
@@ -44,7 +44,7 @@ $secondhalf = array_slice($navItems, $len / 2);
             <a
                 title="Tease + Company"
                 href="/"
-                classes="logo"
+                class="logo"
             >
                 <img src="/logos/text.svg" alt="Tease + Company" />
             </a>
@@ -54,7 +54,7 @@ $secondhalf = array_slice($navItems, $len / 2);
                 <a
                     title="<?php echo $ni->name; ?>"
                     href="<?php echo $ni->url; ?>"
-                    classes="<?php echo $ni->classes; ?>"
+                    class="<?php echo $ni->classes; ?>"
                 >
                     <?php echo $ni->name; ?>
                 </a>
