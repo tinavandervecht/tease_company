@@ -1,0 +1,16 @@
+.image_area {
+    .image {
+        height:400px;
+        background-position:center !important;
+        background-size:cover !important;
+        background-repeat:no-repeat !important;
+        float:left;
+
+        @for $i from 1 through 4 {
+            &:first-child:nth-last-child(#{$i}),
+            &:first-child:nth-last-child(#{$i}) ~ .image {
+                width: 100% / $i
+            }
+        }
+    }
+}

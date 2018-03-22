@@ -10,4 +10,17 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
     ?>
 </section>
 
+<section class="image_area">
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+</section>
+
+<section class="image_area">
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+</section>
+
+<section class="image_area">
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+</section>
+
 <?php include('elements/footer.php'); ?>
