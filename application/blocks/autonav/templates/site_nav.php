@@ -54,20 +54,20 @@ $secondhalf = array_slice($navItems, $len / 2);
                             </a>
                             <?php if ($ni->hasSubmenu) : ?>
                                 <div id="sub_nav_<?php echo $ni->cID; ?>" class="sub-nav">
-                                    <div class="sub_nav">
-                                        <div class="container">
-                                            <div class="sub_nav_slider">
-                                                <?php
-                                                    $bt = BlockType::getByHandle('page_list');
-                                                    $bt->controller->cParentID = $ni->cID;
-                                                    $bt->controller->truncateSummaries = 'true';
-                                                    $bt->controller->paginate = 'false';
-                                                    $bt->controller->orderBy = 'display_asc';
-                                                    $bt->render($ni->cID === '176'
-                                                        ? 'templates/team_sub_nav'
-                                                        : 'templates/sub_site_nav');
-                                                ?>
-                                            </div>
+                                    <div class="after"></div>
+                                    <div class="before"></div>
+                                    <div class="container">
+                                        <div class="sub_nav_slider">
+                                            <?php
+                                                $bt = BlockType::getByHandle('page_list');
+                                                $bt->controller->cParentID = $ni->cID;
+                                                $bt->controller->truncateSummaries = 'true';
+                                                $bt->controller->paginate = 'false';
+                                                $bt->controller->orderBy = 'display_asc';
+                                                $bt->render($ni->cID === '176'
+                                                    ? 'templates/team_sub_nav'
+                                                    : 'templates/sub_site_nav');
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -100,20 +100,20 @@ $secondhalf = array_slice($navItems, $len / 2);
                             </a>
                             <?php if ($ni->hasSubmenu) : ?>
                                 <div id="sub_nav_<?php echo $ni->cID; ?>" class="sub-nav">
-                                    <div class="sub_nav">
-                                        <div class="container">
-                                            <div class="sub_nav_slider">
-                                                <?php
+                                    <div class="after"></div>
+                                    <div class="before"></div>
+                                    <div class="container">
+                                        <div class="sub_nav_slider">
+                                            <?php
                                                 $bt = BlockType::getByHandle('page_list');
                                                 $bt->controller->cParentID = $ni->cID;
                                                 $bt->controller->truncateSummaries = 'true';
                                                 $bt->controller->paginate = 'false';
                                                 $bt->controller->orderBy = 'display_asc';
                                                 $bt->render($ni->cID === '176'
-                                                ? 'templates/team_sub_nav'
-                                                : 'templates/sub_site_nav');
-                                                ?>
-                                            </div>
+                                                    ? 'templates/team_sub_nav'
+                                                    : 'templates/sub_site_nav');
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

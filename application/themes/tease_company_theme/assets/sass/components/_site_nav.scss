@@ -9,8 +9,32 @@ nav {
         background:#FFFFFF;
         border-top:1px solid $navy;
         border-bottom:1px solid $navy;
-        overflow:hidden;
         z-index:-100;
+
+        .after, .before {
+        	bottom: 100%;
+        	left: 50%;
+        	border: solid transparent;
+        	content: " ";
+        	height: 0;
+        	width: 0;
+        	position: absolute;
+        	pointer-events: none;
+        }
+
+        .after {
+        	border-color: rgba(0, 0, 0, 0);
+        	border-bottom-color: #FFFFFF;
+        	border-width: 20px;
+        	margin-left: -20px;
+            z-index:1;
+        }
+        .before {
+        	border-color: rgba(0, 0, 0, 0);
+        	border-bottom-color: #000000;
+        	border-width: 21px;
+        	margin-left: -21px;
+        }
 
         .sub_nav_item {
             background:$coral;
