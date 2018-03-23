@@ -19,9 +19,19 @@ elixir(function (mix) {
         require: ['sass-globbing'],
         style: inProduction ? "compressed" : ""
     });
+
+
+    mix.compass('slick.scss', baseThemePath + '/css', {
+        require: ['sass-globbing'],
+        style: inProduction ? "compressed" : ""
+    });
+
     /* ----
     Scripts processing
     (with Browserify)
     ---- */
     mix.browserify('app.js', baseThemePath + '/js');
+    mix.copy(baseThemePath + '/assets/js/slick.js', baseThemePath + '/js');
+
+    mix.copy(baseThemePath + '/assets/images', baseThemePath + '/images');
 });

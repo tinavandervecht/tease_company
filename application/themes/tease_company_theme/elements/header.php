@@ -1,5 +1,9 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<?php
+$u = new User;
+?>
+
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
@@ -8,8 +12,9 @@
     <meta charset="utf-8">
     <?php Loader::element('header_required'); ?>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
+    <link href="<?php echo $this->getThemePath(); ?>/css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css"/>
 
     <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
