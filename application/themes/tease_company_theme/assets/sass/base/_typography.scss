@@ -1,3 +1,7 @@
+body {
+    letter-spacing: 4px;
+}
+
 a {
     text-decoration:none;
     @include transition(0.4s);

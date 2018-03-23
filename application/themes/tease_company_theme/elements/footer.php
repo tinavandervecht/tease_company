@@ -32,5 +32,6 @@
 <?php endif; ?>
 <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/slick.js"></script>
 <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/app.js"></script>
+</div>
 </body>
 </html>

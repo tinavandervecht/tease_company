@@ -30,17 +30,15 @@ $u = new User;
 </head>
 
 <body class="<?php echo $c->getPageWrapperClass()?>">
+    <div id="main">
     <header id="header">
         <div class="top_bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 text-center">
+                    <div class="col-md-12 text-center">
                         <div class="logo_icon">
-                            <img src="/images/logos/icon.svg" alt="Tease + Company Logo" />
+                            <img src="<?php echo $this->getThemePath(); ?>/images/logos/icon.svg" alt="Tease + Company Logo" />
                         </div>
-                    </div>
-                    <div class="col-md-2 text-right">
                         <div class="social_icons">
                             <a href="" target="_blank">
                                 <span class="fa fa-instagram fa-lg"></span>

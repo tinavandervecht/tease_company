@@ -10,12 +10,17 @@
         @include border-radius(50%);
 
         img {
-            width:100%;
-            height:auto;
+            width: 71%;
+            height: auto;
+            margin-top: 5px;
+            margin-left: 1px;
         }
     }
-    
+
     .social_icons {
+        position:absolute;
+        top:0;
+        right:0;
         margin-top:$spacing / 2;
         a {
             margin:0 $spacing;

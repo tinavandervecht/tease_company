@@ -1,0 +1,111 @@
+nav {
+    position:relative;
+    .sub-nav {
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        padding:50px 0;
+        background:#FFFFFF;
+        border-top:1px solid $navy;
+        border-bottom:1px solid $navy;
+        overflow:hidden;
+        z-index:-100;
+
+        .sub_nav_item {
+            background:$coral;
+            padding: $spacing * 3;
+            color:#FFFFFF;
+            text-decoration:underline;
+            text-transform:none;
+            height:250px;
+            max-width:170px;
+            width:90%;
+            font-size:$font-size-large;
+            overflow-wrap:break-word;
+            hyphens:auto;
+            display: flex;
+            align-items: center;
+            margin: 12px auto;
+            position:relative;
+
+            em {
+                display:block;
+                margin:0 auto;
+            }
+
+            &:before {
+                display:none;
+                content: '\f004';
+                font-family: FontAwesome;
+                position: absolute;
+                z-index: 2;
+                top: -16px;
+                left: -10px;
+                font-size: 1.75em;
+                color: $salmonPink;
+                @include transform(rotate(-36deg));
+            }
+
+            &:hover, &:focus {
+                &:before {
+                    display:block;
+                }
+            }
+        }
+
+        .slick-prev, .slick-next {
+            position:absolute;
+            top:40%;
+            font-size:4em;
+            z-index:2;
+            background:none;
+            border:none;
+            outline:none;
+            color:$salmonPink;
+        }
+
+        .slick-prev {
+            left:0;
+        }
+
+        .slick-next {
+            right:0;
+        }
+    }
+
+    .main_nav {
+        margin-bottom:0;
+
+        .nav_section {
+            margin:0;
+        }
+
+        div[class*='col-md-'] {
+            position:initial;
+        }
+
+        .logo {
+            padding:10px 0;
+            display:inline-block;
+            img {
+                max-width: 100px;
+            }
+        }
+
+        li {
+            padding: 0 !important;
+
+            a {
+                padding:22px 40px;
+                display:inline-block;
+            }
+
+            &:hover {
+                .sub-nav {
+                    z-index:2;
+                }
+            }
+        }
+    }
+}
