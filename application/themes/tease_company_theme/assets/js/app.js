@@ -1,4 +1,7 @@
-$(document).ready(function(){
+var matchHeight = require('./components/matchHeight');
+var navArrows = require('./components/navArrows');
+
+$(document).ready(function () {
     $(' .sub_nav_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -14,13 +17,6 @@ $(document).ready(function(){
         ]
     });
 
-    positionNavArrows();
-    window.addEventListener("resize", positionNavArrows);
+    navArrows.init();
+    matchHeight.init();
 });
-
-function positionNavArrows() {
-    $('.main_nav .nav-has-dropdown').each(function() {
-        const leftPos = $(this).offset().left + ($(this).outerHeight() + 10);
-        $('.sub-nav .after, .sub-nav .before', $(this)).css('left', leftPos);
-    });
-}

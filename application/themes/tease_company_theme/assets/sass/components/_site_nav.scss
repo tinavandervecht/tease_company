@@ -50,7 +50,7 @@ nav {
             hyphens:auto;
             display: flex;
             align-items: center;
-            margin: 12px auto;
+            margin: 20px auto;
             position:relative;
 
             em {
@@ -80,7 +80,7 @@ nav {
 
         .slick-prev, .slick-next {
             position:absolute;
-            top:40%;
+            top:32%;
             font-size:4em;
             z-index:2;
             background:none;

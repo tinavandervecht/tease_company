@@ -3,7 +3,9 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <?php include('elements/header.php'); ?>
 
-<?php include('elements/intro.php'); ?>
+<div class="large_line_height">
+    <?php include('elements/intro.php'); ?>
+</div>
 
 
 <section class="image_area">

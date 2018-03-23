@@ -13,6 +13,7 @@ $u = new User;
     <?php Loader::element('header_required'); ?>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
     <link href="<?php echo $this->getThemePath(); ?>/css/slick.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css"/>
 
@@ -29,8 +30,8 @@ $u = new User;
     </script>
 </head>
 
-<body class="<?php echo $c->getPageWrapperClass()?>">
-    <div id="main">
+<body>
+    <div id="main" class="<?php echo $c->getPageWrapperClass()?>">
     <header id="header">
         <div class="top_bar">
             <div class="container">

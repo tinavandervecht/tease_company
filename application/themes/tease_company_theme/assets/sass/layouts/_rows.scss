@@ -1,0 +1,27 @@
+.row {
+    div[class*="col-"] {
+        &.p-l-0 {
+            @media(min-width:$screen-md) {
+                padding-left:0 !important;
+            }
+        }
+
+        &.p-r-0 {
+            @media(min-width:$screen-md) {
+                padding-right:0 !important;
+            }
+        }
+
+        &.p-t-0 {
+            @media(min-width:$screen-md) {
+                padding-top:0 !important;
+            }
+        }
+
+        &.p-b-0 {
+            @media(min-width:$screen-md) {
+                padding-bottom:0 !important;
+            }
+        }
+    }
+}

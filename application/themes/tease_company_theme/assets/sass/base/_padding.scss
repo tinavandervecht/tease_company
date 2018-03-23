@@ -2,3 +2,21 @@
     padding-top:200px;
     padding-bottom:200px;
 }
+
+@for $i from 1 through 5 {
+    .p-l-#{$i} {
+        padding-left:$spacing * $i;
+    }
+
+    .p-r-#{$i} {
+        padding-right:$spacing * $i;
+    }
+
+    .p-t-#{$i} {
+        padding-top:$spacing * $i;
+    }
+
+    .p-b-#{$i} {
+        padding-bottom:$spacing * $i;
+    }
+}
