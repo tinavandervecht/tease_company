@@ -1,6 +1,18 @@
 #reviews {
     .review_slider {
         background:$coral;
-        padding: $spacing * 3;
+        padding:$spacing *2;
+
+        .slick-prev, .slick-next {
+            left:44%;
+        }
+
+        .slick-prev {
+            top:-22%;
+        }
+
+        .slick-next {
+            bottom:-22%;
+        }
     }
 }

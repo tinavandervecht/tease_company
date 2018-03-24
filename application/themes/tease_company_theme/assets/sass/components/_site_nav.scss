@@ -79,14 +79,7 @@ nav {
         }
 
         .slick-prev, .slick-next {
-            position:absolute;
             top:32%;
-            font-size:4em;
-            z-index:2;
-            background:none;
-            border:none;
-            outline:none;
-            color:$salmonPink;
         }
 
         .slick-prev {

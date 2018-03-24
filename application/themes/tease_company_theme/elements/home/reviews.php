@@ -5,16 +5,35 @@
                 <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" />
             </div>
             <div class="col-md-8 p-l-0 match_height">
-                <h2 class="p-l-2"><em>reviews</em></h2>
+                <h2 class="p-l-2 p-b-8"><strong><em>reviews</em></strong></h2>
                 <div class="review_slider large_line_height">
-                    <p>
-                        <em>march 28, 2018</em>
-                    </p>
-                    <p>
-                        Cupcake ipsum dolor sit. Amet fruitcake cake dragée candy cupcake cotton candy croissant. 
-                        Pastry cookie sweet croissant biscuit. Topping macaroon gummies. Jujubes caramels powder 
-                        apple pie biscuit pudding pastry. Cookie sesame snaps carrot cake pudding caramels.
-                    </p>
+                    <div class="review">
+                        <p>
+                            <em>march 28, 2018</em>
+                        </p>
+                        <p>
+                            Cupcake ipsum dolor sit. Amet fruitcake cake dragée candy cupcake cotton candy croissant. 
+                            Pastry cookie sweet croissant biscuit. Topping macaroon gummies. Jujubes caramels powder.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <p>
+                            <em>march 15, 2018</em>
+                        </p>
+                        <p>
+                            Cupcake ipsum dolor sit. Amet fruitcake cake dragée candy cupcake cotton candy croissant. 
+                            Pastry cookie sweet croissant.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <p>
+                            <em>april 10, 2018</em>
+                        </p>
+                        <p>
+                            Cupcake ipsum dolor sit. Amet fruitcake cake dragée candy cupcake cotton candy croissant. 
+                            Pastry cookie sweet croissant biscuit. Topping macaroon gummies.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
