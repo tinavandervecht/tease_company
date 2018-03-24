@@ -32,6 +32,7 @@ elixir(function (mix) {
     ---- */
     mix.browserify('app.js', baseThemePath + '/js');
     mix.copy(baseThemePath + '/assets/js/slick.js', baseThemePath + '/js');
+    mix.copy('./node_modules/jquery-validation/dist/jquery.validate.min.js', baseThemePath + '/js');
 
     mix.copy(baseThemePath + '/assets/images', baseThemePath + '/images');
 });

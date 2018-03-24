@@ -1,0 +1,50 @@
+.form-group {
+    margin-bottom:$spacing * 3;
+    position:relative;
+    &._website {
+        display:none;
+    }
+
+    label.error {
+        position: absolute;
+        z-index: 1;
+        padding: 0;
+        font-size: $spacing;
+        margin: 0;
+        line-height: 1em;
+        top: -16px;
+        right: 0;
+        color:$coral;
+    }
+}
+
+.form-control {
+    @include border-radius(0px);
+    border:2px solid $navy;
+    color:$navy;
+    padding: $spacing * 2;
+    @include box-shadow(none);
+    &::-webkit-input-placeholder {
+        color: $navy;
+        font-style:italic;
+    }
+    &::-moz-placeholder {
+        color: $navy;
+        font-style:italic;
+    }
+    &:-ms-input-placeholder {
+        color: $navy;
+        font-style:italic;
+    }
+    &:-moz-placeholder {
+        color: $navy;
+        font-style:italic;
+    }
+
+    &:focus {
+        outline:none;
+        @include box-shadow(none);
+        border-color:$navy;
+    }
+}
+

@@ -28,7 +28,15 @@ $u = new User;
             document.querySelector('head').appendChild(msViewportStyle);
         }
     </script>
+    <script type="text/javascript">
+        var BASE_URL = "<?php echo BASE_URL; ?>";
+        var CCM_THEME_PATH = "<?php echo $this->getThemePath(); ?>";
+        var CCM_LOGGED_IN = <?php if($u->isLoggedIn()) : ?> true <?php else : ?> false <?php endif; ?>;
+        var PAGE_ID = "<?php echo $c->getCollectionID(); ?>";
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWEKqRmvJ7h5x3R0yP7jYKnN4qHz5UzD4&v=3&libraries=geometry"></script>
 </head>
+
 
 <body>
     <div id="main" class="<?php echo $c->getPageWrapperClass()?>">

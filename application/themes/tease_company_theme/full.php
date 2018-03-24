@@ -1,9 +1,21 @@
 <?php
-defined('C5_EXECUTE') or die("Access Denied."); ?>
+defined('C5_EXECUTE') or die("Access Denied.");
 
-<?php include('elements/header.php'); ?>
+$this->inc('elements/header.php');
+?>
 
-<section>
-</section>
+<main class="section_padding large_line_height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                $a = new Area('Main');
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </div>
+</main>
 
-<?php include('elements/footer.php'); ?>
+<?php
+$this->inc('elements/footer.php');
