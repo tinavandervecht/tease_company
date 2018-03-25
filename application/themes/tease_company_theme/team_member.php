@@ -2,20 +2,49 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 
 $this->inc('elements/header.php');
+$page = Page::getCurrentPage();
 ?>
 
-<main class="section_padding large_line_height">
+<section id="team_member_overview" class="section_padding large_line_height">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <?php
-                $a = new Area('Main');
-                $a->display($c);
-                ?>
+            <div class="col-md-5 p-r-0 match_height align_image_bottom">
+                <?php if ($page->getAttribute('avatar')): ?>
+                    <img src="<?php echo $page->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" />
+                <?php else: ?>
+                    <div class="avatar"></div>
+                <?php endif; ?>
+            </div>
+            <div class="col-md-7 p-l-0 large_line_height match_height">
+                <div class="team_member_overview">
+                    <div class="content p-l-4 p-r-4 p-b-1">
+                        <h1><em><strong><?php echo $page->getCollectionName(); ?></strong></em></h1>
+                        <h2><em><?php echo $page->getAttribute('job_title'); ?></em></h2>
+                        <p>
+                            <?php echo $page->getCollectionDescription(); ?>
+                        </p>
+                        <ul class="list-inline">
+                            <?php if($page->getAttribute('instagram_url')): ?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $page->getAttribute('instagram_url'); ?>">
+                                        <span class="fa fa-instagram fa-lg"></span>
+                                    </a>
+                                </li>
+                            <?php endif;?>
+                            <?php if($page->getAttribute('facebook_url')): ?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $page->getAttribute('facebook_url'); ?>">
+                                        <span class="fa fa-facebook fa-lg"></span>
+                                    </a>
+                                </li>
+                            <?php endif;?>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</main>
+</section>
 
 <?php
 $this->inc('elements/footer.php');
