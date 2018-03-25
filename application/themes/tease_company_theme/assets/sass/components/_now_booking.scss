@@ -1,0 +1,15 @@
+#now_booking {
+    position: absolute;
+    right: 0;
+
+    .now_booking_wrapper {
+        color: #fff;
+        padding: $spacing *2;
+        padding-right:$spacing * 5;
+        background: $navy;
+
+        h1,h2,h3,h4,h5,h6,p {
+            margin:0;
+        }
+    }
+}

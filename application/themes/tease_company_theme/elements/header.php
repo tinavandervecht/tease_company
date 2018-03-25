@@ -71,3 +71,11 @@ $u = new User;
             $bt->render('templates/site_nav');
         ?>
     </header>
+    <div id="now_booking">
+        <?php
+            $a = new GlobalArea('Now Booking');
+            $a->setBlockWrapperStart('<div class="now_booking_wrapper">');
+            $a->setBlockWrapperEnd('</div>');
+            $a->display();
+        ?>
+    </div>
