@@ -1,0 +1,19 @@
+button[type="submit"] {
+    background: none;
+    color: $salmonPink;
+    @include border-radius(unset);
+    border-width: 2px;
+    padding: 5px 40px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 16px;
+    @include transition(0.2s);
+
+    &:hover, &:focus {
+        color:#FFFFFF;
+        outline:none;
+        background:$salmonPink;
+        border-color:$salmonPink;
+    }
+}
