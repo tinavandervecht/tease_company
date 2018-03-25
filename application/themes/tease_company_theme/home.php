@@ -14,22 +14,22 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 
 <section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4678.jpg')"></div>
 </section>
 
 <?php include('elements/home/reviews.php'); ?>
 
 
 <section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4738.jpg')"></div>
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4705.jpg')"></div>
 </section>
 
 <?php include('elements/home/monthly_favourites.php'); ?>
 
 
 <section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/placeholder.png')"></div>
+    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4271.jpg')"></div>
 </section>
 
 <section id="contact_messaging" class="section_padding">

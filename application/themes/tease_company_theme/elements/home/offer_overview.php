@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-md-4 match_height align_image_bottom">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" />
+                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4849.jpg" />
             </div>
         </div>
     </div>

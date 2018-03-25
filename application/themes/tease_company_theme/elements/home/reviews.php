@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 p-r-0 match_height align_image_bottom">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" />
+                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4764.jpg" />
             </div>
             <div class="col-md-8 p-l-0 match_height">
                 <h2 class="p-l-2 p-b-8"><strong><em>reviews</em></strong></h2>
