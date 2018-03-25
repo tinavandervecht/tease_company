@@ -1,0 +1,12 @@
+#team {
+    position:relative;
+    &:before {
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        width:66.667%;
+        height:100%;
+        background:$paleBlue;
+    }
+}
