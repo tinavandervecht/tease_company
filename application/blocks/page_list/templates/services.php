@@ -6,7 +6,9 @@ defined('C5_EXECUTE') or die('Access Denied.'); ?>
     <em><strong><?php echo $controller->pageListTitle; ?></strong></em>
 </h1>
 <?php foreach ($pages as $i => $page) : ?>
-    <h2 class="service_title h1 text-primary">
+    <h2 class="service_title h1 text-primary"
+     id="<?php echo str_replace(' ', '_', strtolower($page->getCollectionName())); ?>"
+     >
         <em><strong><?php echo $page->getCollectionName();  ?></strong></em>
     </h2>
 
