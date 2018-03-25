@@ -1,0 +1,21 @@
+.service_title {
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.service_item {
+    display:flex;
+    align-items: baseline;
+    font-size:20px;
+    font-weight:bold;
+    font-style:italic;
+
+    .name, .price {
+        padding:0 8px;
+    }
+
+    .breakline {
+        flex-grow:1;
+        border-bottom:2px solid $navy;
+    }
+}

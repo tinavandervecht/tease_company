@@ -45,13 +45,21 @@ $secondhalf = array_slice($navItems, $len / 2);
                         <li class="<?php echo $ni->classes; ?>"
                             data-page-id="<?php echo $ni->cID; ?>"
                         >
-                            <a
-                                title="<?php echo $ni->name; ?>"
-                                href="<?php echo $ni->url; ?>"
-                                target="<?php echo $ni->target; ?>"
-                            >
-                                <?php echo $ni->name; ?>
-                            </a>
+                            <?php if($ni->cObj->getAttribute('disable_linking')): ?>
+                                <button
+                                    type="button"
+                                >
+                                    <?php echo $ni->name; ?>
+                                </button>
+                            <?php else: ?>
+                                <a
+                                    title="<?php echo $ni->name; ?>"
+                                    href="<?php echo $ni->url; ?>"
+                                    target="<?php echo $ni->target; ?>"
+                                >
+                                    <?php echo $ni->name; ?>
+                                </a>
+                            <?php endif; ?>
                             <?php if ($ni->hasSubmenu) : ?>
                                 <div id="sub_nav_<?php echo $ni->cID; ?>"
                                     class="sub-nav <?php echo $ni->cID === '176' ? 'team_nav' : 'default_nav' ?>"
@@ -93,13 +101,21 @@ $secondhalf = array_slice($navItems, $len / 2);
                         <li class="<?php echo $ni->classes; ?>"
                             data-page-id="<?php echo $ni->cID; ?>"
                             >
-                            <a
-                                title="<?php echo $ni->name; ?>"
-                                href="<?php echo $ni->url; ?>"
-                                target="<?php echo $ni->target; ?>"
-                            >
-                                <?php echo $ni->name; ?>
-                            </a>
+                            <?php if($ni->cObj->getAttribute('disable_linking')): ?>
+                                <button
+                                    type="button"
+                                >
+                                    <?php echo $ni->name; ?>
+                                </button>
+                            <?php else: ?>
+                                <a
+                                    title="<?php echo $ni->name; ?>"
+                                    href="<?php echo $ni->url; ?>"
+                                    target="<?php echo $ni->target; ?>"
+                                >
+                                    <?php echo $ni->name; ?>
+                                </a>
+                            <?php endif; ?>
                             <?php if ($ni->hasSubmenu) : ?>
                                 <div id="sub_nav_<?php echo $ni->cID; ?>"
                                     class="sub-nav <?php echo $ni->cID === '176' ? 'team_nav' : 'default_nav' ?>"

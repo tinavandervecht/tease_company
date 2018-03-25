@@ -12,6 +12,7 @@ $u = new User;
     <meta charset="utf-8">
     <?php Loader::element('header_required'); ?>
 
+    <link href="https://file.myfontastic.com/fA6uYncGRhGUcSkmVEhAMd/icons.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
     <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
     <link href="<?php echo $this->getThemePath(); ?>/css/slick.css" rel="stylesheet" type="text/css"/>

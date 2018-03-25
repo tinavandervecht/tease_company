@@ -106,11 +106,11 @@ nav {
         }
 
         .slick-prev {
-            left:0;
+            left:-20px;
         }
 
         .slick-next {
-            right:0;
+            right:-20px;
         }
     }
 
@@ -136,9 +136,11 @@ nav {
         li {
             padding: 0 !important;
 
-            a {
+            a, button {
                 padding:22px 40px;
                 display:inline-block;
+                background:none;
+                border: none;
             }
 
             &:hover {

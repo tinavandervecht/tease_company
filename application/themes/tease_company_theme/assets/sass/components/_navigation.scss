@@ -1,8 +1,17 @@
 nav, #nav {
     ul li {
         padding:($spacing * 2) ($spacing * 4) !important;
-        a {
+        a, button {
             text-transform:uppercase;
+        }
+
+        button {
+            letter-spacing:3px;
+            @include transition(0.2s);
+            &:hover, &:focus {
+                color:$salmonPink;
+                outline:none;
+            }
         }
     }
 }
