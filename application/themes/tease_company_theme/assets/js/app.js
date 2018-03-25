@@ -24,6 +24,21 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><span class="fa fa-angle-down"></span></button>',
     });
 
+    $(' .monthly_favourites_slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: '<button type="button" class="slick-prev"><span class="fa fa-angle-left"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="fa fa-angle-right"></span></button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
     var stHeight = $('.review_slider .slick-list').height();
     $('.review_slider .review').each(function() {
         $(this).css('height', stHeight);
