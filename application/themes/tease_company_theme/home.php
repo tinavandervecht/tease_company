@@ -36,7 +36,7 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2><em><u>book your appointment!</u></em></h2>
+                <h2><a href="<?php echo DIR_REL . Page::getCollectionPathFromID(174); ?>"><em><u>book your appointment!</u></em></a></h2>
             </div>
         </div>
     </div>

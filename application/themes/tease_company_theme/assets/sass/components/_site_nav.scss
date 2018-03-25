@@ -37,26 +37,10 @@ nav {
         }
 
         .sub_nav_item {
-            background:$coral;
-            padding: $spacing * 3;
-            color:#FFFFFF;
-            text-decoration:underline;
-            text-transform:none;
-            height:250px;
             max-width:170px;
-            width:90%;
-            font-size:$font-size-large;
-            overflow-wrap:break-word;
-            hyphens:auto;
-            display: flex;
-            align-items: center;
             margin: 20px auto;
+            width:90%;
             position:relative;
-
-            em {
-                display:block;
-                margin:0 auto;
-            }
 
             &:before {
                 display:none;
@@ -64,7 +48,7 @@ nav {
                 font-family: FontAwesome;
                 position: absolute;
                 z-index: 2;
-                top: -16px;
+                top: -11px;
                 left: -10px;
                 font-size: 1.75em;
                 color: $salmonPink;
@@ -74,6 +58,45 @@ nav {
             &:hover, &:focus {
                 &:before {
                     display:block;
+                }
+            }
+        }
+
+        &.default_nav .sub_nav_item {
+            background:$coral;
+            height:250px;
+            padding: $spacing * 3;
+            color:#FFFFFF;
+            text-decoration:underline;
+            text-transform:none;
+            font-size:$font-size-large;
+            overflow-wrap:break-word;
+            hyphens:auto;
+            display: flex;
+            align-items: center;
+
+            em {
+                display:block;
+                margin:0 auto;
+            }
+        }
+
+        &.team_nav .sub_nav_item {
+            text-align:left;
+            padding:0;
+            text-transform:initial;
+
+            .avatar {
+                height:250px;
+                width:100%;
+                display:block;
+                &:not(.has_image) {
+                    background-color:$coral;
+                }
+
+                &.has_image {
+                    background-position:center !important;
+                    background-repeat:no-repeat !important;
                 }
             }
         }

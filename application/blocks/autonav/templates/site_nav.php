@@ -53,7 +53,9 @@ $secondhalf = array_slice($navItems, $len / 2);
                                 <?php echo $ni->name; ?>
                             </a>
                             <?php if ($ni->hasSubmenu) : ?>
-                                <div id="sub_nav_<?php echo $ni->cID; ?>" class="sub-nav">
+                                <div id="sub_nav_<?php echo $ni->cID; ?>"
+                                    class="sub-nav <?php echo $ni->cID === '176' ? 'team_nav' : 'default_nav' ?>"
+                                >
                                     <div class="after"></div>
                                     <div class="before"></div>
                                     <div class="container">
@@ -99,7 +101,9 @@ $secondhalf = array_slice($navItems, $len / 2);
                                 <?php echo $ni->name; ?>
                             </a>
                             <?php if ($ni->hasSubmenu) : ?>
-                                <div id="sub_nav_<?php echo $ni->cID; ?>" class="sub-nav">
+                                <div id="sub_nav_<?php echo $ni->cID; ?>"
+                                    class="sub-nav <?php echo $ni->cID === '176' ? 'team_nav' : 'default_nav' ?>"
+                                >
                                     <div class="after"></div>
                                     <div class="before"></div>
                                     <div class="container">
