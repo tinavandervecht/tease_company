@@ -1,6 +1,8 @@
 #now_booking {
     position: absolute;
     right: 0;
+    z-index:2;
+    margin-top: 10px;
 
     .now_booking_wrapper {
         color: #fff;
