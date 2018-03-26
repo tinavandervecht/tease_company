@@ -1,0 +1,17 @@
+.gallery_list_title {
+    margin-bottom:40px !important;
+    letter-spacing:3px;
+}
+
+.gallery_list_slider .gallery_item {
+    height:250px;
+    width:100%;
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+    background-position:center !important;
+    cursor:pointer;
+}
+
+.gallery_list_slider .row {
+    margin-bottom:30px;
+}
