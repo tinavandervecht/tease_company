@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 p-r-0 match_height align_image_bottom">
-                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/hair_shot.png"/>
+                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.png"/>
             </div>
             <div class="col-md-8 p-l-0 large_line_height match_height">
                 <div class="philosophy_overview">
