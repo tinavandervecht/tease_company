@@ -46,5 +46,17 @@ $page = Page::getCurrentPage();
     </div>
 </section>
 
+<section class="p-b-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                    $a = new Area('Member Content');
+                    $a->display($c);
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 $this->inc('elements/footer.php');

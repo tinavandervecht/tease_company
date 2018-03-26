@@ -19,3 +19,53 @@
         border-bottom:2px solid $navy;
     }
 }
+
+.member_service_item {
+    width:100%;
+
+    .icon {
+        height:250px;
+        background:$salmonPink;
+        background-size:cover !important;
+        background-repeat:no-repeat !important;
+        background-position:center !important;
+        border: 2px solid $salmonPink;
+        display:flex;
+        align-items:center;
+        position:relative;
+
+        &:before {
+            position:absolute;
+            width:100%;
+            height:100%;
+            content: '';
+            background:rgba(red($salmonPink),green($salmonPink),blue($salmonPink),0.50);
+            display:none;
+            z-index:1;
+        }
+        .price {
+            display:none;
+            margin:0 auto;
+            color:#FFFFFF;
+            font-size:50px;
+            font-weight:bold;
+            z-index:2;
+        }
+
+        &:hover {
+            &:before {
+                display:block;
+            }
+
+            .price {
+                display:block;
+            }
+        }
+    }
+
+    .name {
+        text-transform:uppercase;
+        margin:10px 0;
+        font-style:italic;
+    }
+}
