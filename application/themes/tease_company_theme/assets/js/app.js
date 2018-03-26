@@ -23,3 +23,34 @@ $(document).ready(function () {
 
     $("form[name='contact_form']").validate();
 });
+
+$('.image_area').each(function(){
+    var img = $('.image', this);
+    var imgParent = $(this);
+    function parallaxImg () {
+        var speed = 0.75;
+        var imgY = imgParent.offset().top;
+        var winY = $(window).scrollTop();
+        var winH = $(window).height();
+        var parentH = imgParent.innerHeight();
+
+        var winBottom = winY + winH;
+
+        if (winBottom > imgY && winY < imgY + parentH) {
+            var imgBottom = ((winBottom - imgY) * speed);
+            var imgTop = winH + parentH;
+            var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+        }
+        img.css({
+            top: imgPercent + '%',
+            transform: 'translate(-50%, -' + imgPercent + '%)'
+        });
+    }
+    $(document).on({
+        scroll: function () {
+            parallaxImg();
+        }, ready: function () {
+            parallaxImg();
+        }
+    });
+});

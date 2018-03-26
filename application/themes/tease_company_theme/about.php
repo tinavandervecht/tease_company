@@ -7,23 +7,30 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
     <?php include('elements/intro.php'); ?>
 </div>
 
-
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4494.jpg')"></div>
-</section>
+<div class="clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4494.jpg" class="image">
+    </section>
+</div>
 
 <?php include('elements/about/philosophy.php'); ?>
 
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4816.jpg')"></div>
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4916.jpg')"></div>
-</section>
+<div class="clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4816.jpg" class="image">
+    </section>
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4916.jpg" class="image">
+    </section>
+</div>
 
 <?php include('elements/about/team.php'); ?>
 
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4456.jpg')"></div>
-</section>
+<div class="clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4456.jpg" class="image">
+    </section>
+</div>
 
 <section id="contact_messaging" class="section_padding">
     <div class="container">

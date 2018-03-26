@@ -12,25 +12,32 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <?php include('elements/home/offer_overview.php'); ?>
 
-
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4678.jpg')"></div>
-</section>
+<div class="clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4678.jpg" class="image">
+    </section>
+</div>
 
 <?php include('elements/home/reviews.php'); ?>
 
 
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4738.jpg')"></div>
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4705.jpg')"></div>
-</section>
+<div class="images clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4738.jpg" class="image">
+    </section>
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4705.jpg" class="image">
+    </section>
+</div>
 
 <?php include('elements/home/monthly_favourites.php'); ?>
 
 
-<section class="image_area">
-    <div class="image" style="background:url('<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4271.jpg')"></div>
-</section>
+<div class="clearfix">
+    <section class="image_area">
+        <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4271.jpg" class="image">
+    </section>
+</div>
 
 <section id="contact_messaging" class="section_padding">
     <div class="container">
