@@ -7,37 +7,53 @@
         </div>
         <?php
             $pl = new PageList();
-            $pl->filterByParentID(203);
+            $pl->filterByParentID(176);
             $pl->sortByDisplayOrder();
-            $pages = $pl->get();
+            $teamMembers = $pl->get();
         ?>
 
         <div class="monthly_favourites_slider">
-            <?php foreach($pages as $i => $page): ?>
-                <div>
-                    <div class="favourite <?php echo $i % 2 == 0 ? 'first_item' : 'second_item'; ?>">
-                        <div class="description large_line_height">
-                            <h2>
-                                <em><?php echo $page->getCollectionName(); ?></em>
-                                <small class="pull-right">$<?php echo $page->getAttribute('price'); ?></small>
-                            </h2>
-                            <p>
-                                <?php echo $page->getAttribute('type'); ?>
-                            </p>
-                            <?php if ($page->getAttribute('short_description')) : ?>
-                                <p>
-                                    "<?php echo $page->getAttribute('short_description'); ?>"
-                                </p>
-                            <?php endif; ?>
+            <?php foreach($teamMembers as $i => $teamMember):
+                $pl = new PageList();
+                $pl->filterByParentID($teamMember->getCollectionID());
+                $pl->filterByName('Monthly Favourite', true);
+                $monthlyFavourites = $pl->get();
+
+                if (! empty($monthlyFavourites)) :
+                    $pl = new PageList();
+                    $pl->filterByParentID($monthlyFavourites[0]->getCollectionID());
+                    $pl->sortByPublicDateDescending();
+                    $monthlyFavourite = $pl->get();
+                    
+                    if (! empty($monthlyFavourite)) :
+                        $monthlyFavourite = $monthlyFavourite[0];
+                    ?>
+                        <div>
+                            <div class="favourite <?php echo $i % 2 == 0 ? 'first_item' : 'second_item'; ?>">
+                                <div class="description large_line_height">
+                                    <h2>
+                                        <em><?php echo $monthlyFavourite->getCollectionName(); ?></em>
+                                        <small class="pull-right">$<?php echo $monthlyFavourite->getAttribute('price'); ?></small>
+                                    </h2>
+                                    <p>
+                                        <?php echo $monthlyFavourite->getAttribute('type'); ?>
+                                    </p>
+                                    <?php if ($monthlyFavourite->getAttribute('short_description')) : ?>
+                                        <p>
+                                            "<?php echo $monthlyFavourite->getAttribute('short_description'); ?>"
+                                        </p>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="avatar">
+                                    <img src="<?php echo $monthlyFavourite->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" alt="<?php echo $monthlyFavourite->getCollectionName(); ?>" />
+                                </div>
+                                <div class="member_information">
+                                    <h2><em><u><a href="<?php echo $teamMember->cPath; ?>"><?php echo $monthlyFavourite->getAttribute('member_name'); ?></a></u>'s fave</em></h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="avatar">
-                            <img src="<?php echo $page->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" alt="<?php echo $page->getCollectionName(); ?>" />
-                        </div>
-                        <div class="member_information">
-                            <h2><em><u><?php echo $page->getAttribute('member_name'); ?></u>'s fave</em></h2>
-                        </div>
-                    </div>
-                </div>
+                    <?php endif; ?>
+                <?php endif; ?>
             <?php endforeach; ?>
         </div>
     </div>
