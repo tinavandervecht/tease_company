@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/photo.png"/>
+                <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg"/>
             </div>
         </div>
     </div>
