@@ -1,30 +1,44 @@
 .image_area {
     @include clearfix();
     width: 100%;
-    height: 450px;
+    height:250px;
     position: relative;
     overflow: hidden;
     float:left;
 
-    @for $i from 1 through 9 {
-        &:first-child:nth-last-child(#{$i}),
-        &:first-child:nth-last-child(#{$i}) ~ .image_area {
-            width: 100% / $i
+    @media(min-width:$screen-md) {
+        height: 450px;
+
+        @for $i from 1 through 9 {
+            &:first-child:nth-last-child(#{$i}),
+            &:first-child:nth-last-child(#{$i}) ~ .image_area {
+                width: 100% / $i
+            }
         }
     }
 
     .image {
-        width: 100vmax;
         position: absolute;
-        top: 0;
         left: 50%;
         @include transform(translate(-50%,0));
         pointer-events: none;
+
+        @media(min-width:$screen-md) {
+            top: 0;
+            width: 100vmax;
+        }
+
+        @media(max-width:$screen-md) {
+            min-height:100%;
+            max-height:200%;
+            min-width:100%;
+            max-width:initial;
+        }
     }
 
     &:hover {
         .pinterest_btn {
-            display:block;
+            @include opacity(1);
         }
     }
 }

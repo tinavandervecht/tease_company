@@ -1,0 +1,10 @@
+#contact_messaging {
+    @media(max-width:$screen-md) {
+        a {
+            padding-left:$spacing * 3;
+            padding-right:$spacing * 3;
+            display:block;
+            padding-top:20px;
+        }
+    }
+}

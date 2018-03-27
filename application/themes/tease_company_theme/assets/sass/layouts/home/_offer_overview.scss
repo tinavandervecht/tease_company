@@ -1,14 +1,24 @@
 #offer_overview {
-    .left-column, .right-column {
-        padding: $spacing * 3;
+    @media(min-width:$screen-md) {
+        .left-column, .right-column {
+            padding: $spacing * 3;
+        }
+        .right-column {
+            background: $paleBlue;
+        }
     }
-    .right-column {
-        background: $paleBlue;
+
+    @media(max-width:$screen-sm) {
+        text-align:center;
     }
 
     .icon {
         position:absolute;
         top:-15px;
         left:0;
+        z-index:2;
+        @media(max-width:$screen-md) {
+            display:none;
+        }
     }
 }

@@ -8,7 +8,11 @@ img {
 
     &:hover {
         .pinterest_btn {
-            display:block;
+            @include opacity(1);
         }
     }
+}
+
+.image_wrapper {
+    position:relative;
 }

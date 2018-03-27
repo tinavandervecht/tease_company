@@ -1,13 +1,25 @@
 #monthly_favourites {
     .slick-arrow {
-        top:40%;
+        top: 40%;
 
         &.slick-prev {
-            left:-20px;
+            left:0;
         }
 
         &.slick-next {
-            right:-20px;
+            right:0;
+        }
+    }
+
+    @media(min-width:$screen-md) {
+        .slick-arrow {
+            &.slick-prev {
+                left:-20px;
+            }
+
+            &.slick-next {
+                right:-20px;
+            }
         }
     }
 
@@ -53,8 +65,12 @@
         }
 
         .avatar {
-            height:500px;
-            padding:80px;
+            height:350px;
+            padding:$spacing;
+            @media(min-width:$screen-md) {
+                height:500px;
+                padding:80px;
+            }
             display:flex;
             align-items: center;
 
@@ -66,7 +82,10 @@
         }
 
         &.first_item {
-            margin-top:225px;
+            margin-top:95px;
+            @media(min-width:$screen-md) {
+                margin-top:225px;
+            }
             margin-bottom:50px;
             margin-left:27px;
 
@@ -101,7 +120,7 @@
 
             .member_information {
                 bottom:-40px;
-                right:5px;
+                right:45px;
             }
         }
 

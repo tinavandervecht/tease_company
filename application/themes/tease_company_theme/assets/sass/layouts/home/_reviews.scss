@@ -1,4 +1,11 @@
 #reviews {
+    h2 {
+        padding-bottom:$spacing * 5;
+        @media(min-width:$screen-md) {
+            padding-left:$spacing * 2;
+            padding-bottom: $spacing * 8;
+        }
+    }
     .review_slider {
         background:$coral;
         padding:$spacing *2;
@@ -8,11 +15,17 @@
         }
 
         .slick-prev {
-            top:-22%;
+            top:-60px;
+            @media(min-width:$screen-md) {
+                top:-22%;
+            }
         }
 
         .slick-next {
-            bottom:-22%;
+            bottom:-60px;
+            @media(min-width:$screen-md) {
+                bottom:-22%;
+            }
         }
     }
 
@@ -20,5 +33,10 @@
         position:absolute;
         right:-15px;
         top:0;
+        z-index:2;
+
+        @media(max-width:$screen-md) {
+            display:none;
+        }
     }
 }
