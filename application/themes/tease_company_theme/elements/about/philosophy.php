@@ -1,7 +1,7 @@
 <section id="philosophy" class="section_padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 p-r-0 match_height align_image_bottom">
+            <div class="col-md-5 p-r-0 match_height align_image_bottom hidden-xs hidden-sm">
                 <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-peach.svg" alt="icon">
                 <div class="image_wrapper">
                     <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
@@ -37,7 +37,7 @@
                     ?>
                 </div>
             </div>
-            <div class="col-md-6 align_image_bottom">
+            <div class="col-md-6 align_image_bottom hidden-xs hidden-sm">
                 <div class="image_wrapper">
                     <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
                     data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg">

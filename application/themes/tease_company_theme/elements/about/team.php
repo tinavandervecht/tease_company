@@ -7,7 +7,7 @@
                     $a->display($c);
                 ?>
             </div>
-            <div class="col-md-4 p-l-6 p-r-10 p-t-2 p-b-6">
+            <div class="col-md-4 team_blurb_content">
                 <?php
                     $a = new Area('Team Blurb');
                     $a->display($c);

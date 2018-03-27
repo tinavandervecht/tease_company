@@ -8,15 +8,15 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 <section class="section_padding large_line_height">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-4 col-md-push-8">
                 <?php
-                    $a = new Area('Main Contact');
+                    $a = new Area('Contact Aside');
                     $a->display($c);
                 ?>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-8 col-md-pull-4">
                 <?php
-                    $a = new Area('Contact Aside');
+                    $a = new Area('Main Contact');
                     $a->display($c);
                 ?>
             </div>

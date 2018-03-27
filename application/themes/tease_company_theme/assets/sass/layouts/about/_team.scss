@@ -15,4 +15,17 @@
         right:70px;
         top:-20px;
     }
+
+    .team_blurb_content {
+        padding-bottom:$spacing * 2;
+        text-align:center;
+
+        @media(min-width:$screen-md) {
+            text-align:right;
+            padding-left:$spacing * 6;
+            padding-right:$spacing * 10;
+            padding-top:$spacing * 2;
+            padding-bottom:$spacing * 6;
+        }
+    }
 }

@@ -20,7 +20,7 @@ defined('C5_EXECUTE') or die('Access Denied.'); ?>
     <?php foreach (array_chunk($services, 3) as $group): ?>
         <div class="row">
             <?php foreach($group as $service): ?>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="member_service_item text-center">
                         <div class="icon">
                             <div class="price">

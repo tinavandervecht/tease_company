@@ -28,7 +28,7 @@ else : ?>
             <?php foreach (array_chunk($group, 3) as $subGroup) : ?>
                 <div class="row">
                     <?php foreach($subGroup as $slide) : ?>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                             <?php $f = File::getByID($slide['fID']); ?>
                             <?php if (is_object($f)) : ?>
                                 <div class="gallery_item" style="background:url(<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>)">
