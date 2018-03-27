@@ -5,10 +5,11 @@ $this->inc('elements/header.php');
 $page = Page::getCurrentPage();
 ?>
 
-<section id="team_member_overview" class="section_padding large_line_height">
+<section id="team_member_overview" class="section_padding _top large_line_height">
     <div class="container">
         <div class="row">
             <div class="col-md-5 p-r-0 match_height align_image_bottom">
+                <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-pink.svg" alt="icon">
                 <?php if ($page->getAttribute('avatar')): ?>
                     <img src="<?php echo $page->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" />
                 <?php else: ?>

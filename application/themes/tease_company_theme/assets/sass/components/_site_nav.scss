@@ -44,15 +44,17 @@ nav {
 
             &:before {
                 display:none;
-                content: '\f004';
-                font-family: FontAwesome;
+                content: '';
+                background:url('../images/icons/heart-coral.svg');
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-position:center;
+                width:40px;
+                height:40px;
                 position: absolute;
                 z-index: 2;
                 top: -11px;
-                left: -10px;
-                font-size: 1.75em;
-                color: $salmonPink;
-                @include transform(rotate(-36deg));
+                left: -15px;
             }
 
             &:hover, &:focus {

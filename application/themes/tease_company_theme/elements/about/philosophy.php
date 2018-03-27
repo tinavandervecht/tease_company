@@ -1,11 +1,12 @@
 <section id="philosophy" class="section_padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 p-r-0 match_height align_image_bottom">
+            <div class="col-md-5 p-r-0 match_height align_image_bottom">
+                <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-peach.svg" alt="icon">
                 <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.png"/>
             </div>
-            <div class="col-md-8 p-l-0 large_line_height match_height">
-                <div class="philosophy_overview">
+            <div class="col-md-7 p-l-0 large_line_height match_height">
+                <div class="philosophy_overview match_height">
                     <div class="content p-l-5 p-r-5 p-b-3 p-t-3">
                         <?php
                             $a = new Area('Philosophy');

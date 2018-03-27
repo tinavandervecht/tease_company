@@ -24,7 +24,7 @@
                     $pl->filterByParentID($monthlyFavourites[0]->getCollectionID());
                     $pl->sortByPublicDateDescending();
                     $monthlyFavourite = $pl->get();
-                    
+
                     if (! empty($monthlyFavourite)) :
                         $monthlyFavourite = $monthlyFavourite[0];
                     ?>
@@ -48,7 +48,8 @@
                                     <img src="<?php echo $monthlyFavourite->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" alt="<?php echo $monthlyFavourite->getCollectionName(); ?>" />
                                 </div>
                                 <div class="member_information">
-                                    <h2><em><u><a href="<?php echo $teamMember->cPath; ?>"><?php echo $monthlyFavourite->getAttribute('member_name'); ?></a></u>'s fave</em></h2>
+                                    <h2><em><a href="<?php echo $teamMember->cPath; ?>"><u><?php echo $monthlyFavourite->getAttribute('member_name'); ?></u>'s</a> fave</em></h2>
+                                    <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-<?php echo $i % 2 == 0 ? 'peach' : 'coral'; ?>.svg" alt="icon" />
                                 </div>
                             </div>
                         </div>

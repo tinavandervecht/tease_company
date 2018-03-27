@@ -42,6 +42,14 @@
         .member_information {
             padding-right:80px;
             font-weight:400;
+
+            .icon {
+                position:absolute;
+                width:105px;
+                height:105px;
+                right:-34px;
+                top:-51px;
+            }
         }
 
         .avatar {
@@ -58,8 +66,9 @@
         }
 
         &.first_item {
-            margin-top:150px;
+            margin-top:225px;
             margin-bottom:50px;
+            margin-left:27px;
 
             .description {
                 top: -25%;
@@ -98,7 +107,8 @@
 
         &.second_item {
             margin-bottom:150px;
-            margin-top:50px;
+            margin-top:90px;
+            margin-right:27px;
 
             .description {
                 bottom: -25%;

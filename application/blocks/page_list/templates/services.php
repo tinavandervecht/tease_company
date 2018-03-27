@@ -1,8 +1,8 @@
 <?php
 defined('C5_EXECUTE') or die('Access Denied.'); ?>
 
-<h1>
-    <span class="icon-heart text-primary"></span>
+<h1 class="services_page_list_title">
+    <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-coral.svg" alt="icon">
     <em><strong><?php echo $controller->pageListTitle; ?></strong></em>
 </h1>
 <?php foreach ($pages as $i => $page) : ?>

@@ -17,6 +17,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-10">
+                <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/star-navy.svg" alt="icon">
                 <?php
                     $a = new Area('About Our Team');
                     $a->display($c);

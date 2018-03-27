@@ -1,3 +1,8 @@
+.services_page_list_title .icon {
+    width:50px;
+    height:50px;
+}
+
 .service_title {
     margin-top:80px;
     margin-bottom:20px;
@@ -52,12 +57,23 @@
             z-index:2;
         }
 
-        &:hover {
-            &:before {
-                display:block;
-            }
+        &:after {
+            display:none;
+            content: '';
+            background:url('../images/icons/heart-pink.svg');
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center;
+            width:50px;
+            height:50px;
+            position: absolute;
+            z-index: 2;
+            top: -20px;
+            left: -25px;
+        }
 
-            .price {
+        &:hover {
+            &:before, &:after, .price {
                 display:block;
             }
         }
