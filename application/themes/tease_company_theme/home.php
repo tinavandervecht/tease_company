@@ -14,6 +14,10 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <div class="clearfix">
     <section class="image_area">
+        <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+        data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4678.jpg">
+            <span class="fa fa-pinterest fa-5x"></span>
+        </button>
         <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4678.jpg" class="image">
     </section>
 </div>
@@ -23,9 +27,17 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <div class="images clearfix">
     <section class="image_area">
+        <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+        data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4738.jpg">
+            <span class="fa fa-pinterest fa-5x"></span>
+        </button>
         <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4738.jpg" class="image">
     </section>
     <section class="image_area">
+        <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+        data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4705.jpg">
+            <span class="fa fa-pinterest fa-5x"></span>
+        </button>
         <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4705.jpg" class="image">
     </section>
 </div>
@@ -35,6 +47,10 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <div class="clearfix">
     <section class="image_area">
+        <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+        data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4271.jpg">
+            <span class="fa fa-pinterest fa-5x"></span>
+        </button>
         <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4271.jpg" class="image">
     </section>
 </div>

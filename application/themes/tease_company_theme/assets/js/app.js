@@ -38,6 +38,12 @@ $(document).ready(function () {
             $('.overlay').removeClass('active');
         }
     })
+
+    $('.pinterest_btn').on('click', function() {
+        PinUtils.pinOne({
+            'media': $(this).data('pin-media')
+        });
+    })
 });
 
 $('.image_area').each(function(){

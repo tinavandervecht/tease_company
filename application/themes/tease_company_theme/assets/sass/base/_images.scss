@@ -5,4 +5,10 @@ img {
 .align_image_bottom {
     display:flex;
     align-items:flex-end;
+
+    &:hover {
+        .pinterest_btn {
+            display:block;
+        }
+    }
 }

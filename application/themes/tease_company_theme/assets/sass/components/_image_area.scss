@@ -21,4 +21,10 @@
         @include transform(translate(-50%,0));
         pointer-events: none;
     }
+
+    &:hover {
+        .pinterest_btn {
+            display:block;
+        }
+    }
 }

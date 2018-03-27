@@ -3,6 +3,10 @@
         <div class="row">
             <div class="col-md-5 p-r-0 match_height align_image_bottom">
                 <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-peach.svg" alt="icon">
+                <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+                data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.jpg">
+                    <span class="fa fa-pinterest fa-5x"></span>
+                </button>
                 <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.png"/>
             </div>
             <div class="col-md-7 p-l-0 large_line_height match_height">
@@ -31,7 +35,11 @@
                     ?>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 align_image_bottom">
+                <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+                data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg">
+                    <span class="fa fa-pinterest fa-5x"></span>
+                </button>
                 <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg"/>
             </div>
         </div>

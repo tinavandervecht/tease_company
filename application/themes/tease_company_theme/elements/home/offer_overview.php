@@ -23,6 +23,10 @@
             </div>
             <div class="col-md-4 match_height align_image_bottom">
                 <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/star-navy.svg" alt="icon" />
+                <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
+                data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4849.jpg">
+                    <span class="fa fa-pinterest fa-5x"></span>
+                </button>
                 <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4849.jpg" />
             </div>
         </div>
