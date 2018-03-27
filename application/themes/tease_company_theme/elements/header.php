@@ -51,10 +51,10 @@ $u = new User;
                             <img src="<?php echo $this->getThemePath(); ?>/images/logos/icon.svg" alt="Tease + Company Logo" />
                         </div>
                         <div class="social_icons">
-                            <a href="" target="_blank">
+                            <a href="https://www.instagram.com/hairbysarab1/" target="_blank">
                                 <span class="fa fa-instagram fa-lg"></span>
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://www.facebook.com/teaseandcompany" target="_blank">
                                 <span class="fa fa-facebook fa-lg"></span>
                             </a>
                         </div>
