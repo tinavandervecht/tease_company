@@ -31,6 +31,13 @@ $(document).ready(function () {
     $('.mobile_nav_section button').on('click', function() {
         $(this).next('.sub_nav').slideToggle('fast');
     })
+
+    window.addEventListener('resize', function() {
+        if ($(window).width() > 768) {
+            $('.mobile_nav_section').removeClass('open');
+            $('.overlay').removeClass('active');
+        }
+    })
 });
 
 $('.image_area').each(function(){

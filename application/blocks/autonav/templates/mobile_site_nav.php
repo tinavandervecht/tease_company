@@ -29,6 +29,14 @@ $subMenuOpen = false;
 <nav class="mobile_nav_section">
     <span class="fa fa-close fa-lg"></span>
     <ul>
+        <li>
+            <a
+                title="Home"
+                href="/"
+            >
+                Home
+            </a>
+        </li>
         <?php foreach ($navItems as $i => $ni) : ?>
             <?php if ($ni->cObj->getAttribute('page_links_to_parent_section')) :
                 $parent = Page::getByID($ni->cObj->cParentID);
