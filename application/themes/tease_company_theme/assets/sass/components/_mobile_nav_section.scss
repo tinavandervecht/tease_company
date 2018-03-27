@@ -1,0 +1,46 @@
+.mobile_nav_section {
+    position:fixed;
+    top:0;
+    left:-100%;
+    background:#FFFFFF;
+    z-index:5;
+    height:100%;
+    width:87%;
+    border-right:2px solid $navy;
+    @include transition(0.4s);
+
+    &.open {
+        left:0;
+    }
+
+    ul {
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow:scroll;
+
+        li {
+            list-style-type:none;
+            padding:15px !important;
+
+            button {
+                border:none;
+                background:none;
+                padding:0;
+                margin-bottom:10px;
+            }
+        }
+    }
+
+    .sub_nav {
+        display:none;
+    }
+
+    .fa-close {
+        position:absolute;
+        right:-45px;
+        top:8px;
+        font-size:40px;
+        cursor:pointer;
+    }
+}

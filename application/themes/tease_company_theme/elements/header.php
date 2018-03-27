@@ -40,11 +40,13 @@ $u = new User;
 
 <body>
     <div id="main" class="<?php echo $c->getPageWrapperClass()?>">
+    <div class="overlay"></div>
     <header id="header">
         <div class="top_bar">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
+                        <div class="mobile_nav_button hidden-md hidden-lg fa fa-navicon fa-lg"></div>
                         <div class="logo_icon">
                             <img src="<?php echo $this->getThemePath(); ?>/images/logos/icon.svg" alt="Tease + Company Logo" />
                         </div>
@@ -60,16 +62,30 @@ $u = new User;
                 </div>
             </div>
         </div>
-        <?php
-            $bt = BlockType::getByHandle('autonav');
-            $bt->controller->displayPages = 'top';
-            $bt->controller->displayPagesCID = '';
-            $bt->controller->orderBy = 'display_asc';
-            $bt->controller->displaySubPages = 'all';
-            $bt->controller->displaySubPageLevels = 'all';
-            $bt->controller->displaySubPageLevelsNum = '';
-            $bt->render('templates/site_nav');
-        ?>
+        <div class="hidden-xs hidden-sm">
+            <?php
+                $bt = BlockType::getByHandle('autonav');
+                $bt->controller->displayPages = 'top';
+                $bt->controller->displayPagesCID = '';
+                $bt->controller->orderBy = 'display_asc';
+                $bt->controller->displaySubPages = 'all';
+                $bt->controller->displaySubPageLevels = 'all';
+                $bt->controller->displaySubPageLevelsNum = '';
+                $bt->render('templates/site_nav');
+            ?>
+        </div>
+        <div class="hidden-md hidden-lg">
+            <?php
+                $bt = BlockType::getByHandle('autonav');
+                $bt->controller->displayPages = 'top';
+                $bt->controller->displayPagesCID = '';
+                $bt->controller->orderBy = 'display_asc';
+                $bt->controller->displaySubPages = 'all';
+                $bt->controller->displaySubPageLevels = 'custom';
+                $bt->controller->displaySubPageLevelsNum = '1';
+                $bt->render('templates/mobile_site_nav');
+            ?>
+        </div>
     </header>
     <div id="now_booking">
         <?php

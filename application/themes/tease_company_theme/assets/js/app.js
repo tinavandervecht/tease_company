@@ -22,6 +22,15 @@ $(document).ready(function () {
     SubNavSlider.init();
 
     $("form[name='contact_form']").validate();
+
+    $('.mobile_nav_section .fa-close, .mobile_nav_button').on('click', function() {
+        $('.mobile_nav_section').toggleClass('open');
+        $('.overlay').toggleClass('active');
+    });
+
+    $('.mobile_nav_section button').on('click', function() {
+        $(this).next('.sub_nav').slideToggle('fast');
+    })
 });
 
 $('.image_area').each(function(){

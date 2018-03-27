@@ -17,3 +17,10 @@ button[type="submit"] {
         border-color:$salmonPink;
     }
 }
+
+.mobile_nav_button {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    cursor: pointer;
+}
