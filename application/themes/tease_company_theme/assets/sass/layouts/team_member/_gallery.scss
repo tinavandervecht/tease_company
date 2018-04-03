@@ -16,3 +16,44 @@
         right:-40px;
     }
 }
+
+#gallery_slider_modal {
+    .modal-content {
+        background-color:transparent;
+        @include box-shadow(none);
+        border:none;
+        @include border-radius(0);
+    }
+    .modal-body {
+        padding:0;
+    }
+
+    .slide_count {
+        color:#FFFFFF;
+        font-size:30px;
+    }
+
+    .slider {
+        background:$navy;
+        .slick-arrow {
+            position:absolute;
+            top:40%;
+        }
+
+        .slick-prev {
+            left:-40px;
+        }
+
+        .slick-next {
+            right:-40px;
+        }
+
+        .slide {
+            height:70vh;
+            background-position:center !important;
+            background-size:contain !important;
+            background-repeat:no-repeat !important;
+            border:2px solid $coral;
+        }
+    }
+}

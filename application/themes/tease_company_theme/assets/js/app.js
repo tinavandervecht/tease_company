@@ -3,6 +3,8 @@ window.GLOBAL = {
     prevBtn: '<button type="button" class="slick-prev"><span class="fa fa-angle-left"></span></button>'
 }
 
+require('../../../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
+
 var matchHeight = require('./components/matchHeight');
 var navArrows = require('./components/navArrows');
 var map = require('./components/map');

@@ -20,7 +20,8 @@ if ($c->isEditMode()) :
     </div>
     <?php
     $loc->popActiveContext();
-else : ?>
+else : 
+$count = 0; ?>
 <h1 class="gallery_list_title"><strong><em>gallery</em></strong></h1>
 <div class="gallery_list_slider">
     <?php foreach (array_chunk($rows, 6) as $group) : ?>
@@ -31,8 +32,12 @@ else : ?>
                         <div class="col-md-4 col-sm-6">
                             <?php $f = File::getByID($slide['fID']); ?>
                             <?php if (is_object($f)) : ?>
-                                <div class="gallery_item" style="background:url(<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>)">
+                                <div data-slide-num="<?php echo $count; ?>"
+                                    class="gallery_item"
+                                    style="background:url(<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>)"
+                                >
                                 </div>
+                                <?php $count++; ?>
                             <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
@@ -40,5 +45,31 @@ else : ?>
             <?php endforeach; ?>
         </div>
     <?php endforeach; ?>
+</div>
+
+<div id="gallery_slider_modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="slide_count">
+                    <span class="active_slide_count">0</span>
+                    /
+                    <span><?php echo count($rows); ?></span>
+                </div>
+                <div class="slider">
+                    <?php foreach($rows as $key => $slide) : ?>
+                        <?php $f = File::getByID($slide['fID']); ?>
+                        <?php if (is_object($f)) : ?>
+                            <div class="slide"
+                                data-slide-num="<?php echo $key; ?>"
+                                style="background:url(<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>)"
+                            >
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <?php endif; ?>
