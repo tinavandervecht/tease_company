@@ -5,19 +5,24 @@
 
     .slick-arrow {
         position:absolute;
-        top:32%;
+        top:39%;
     }
 
     .slick-prev {
-        left:-40px;
+        left:-70px;
     }
 
     .slick-next {
-        right:-40px;
+        right:-70px;
     }
 }
 
 #gallery_slider_modal {
+    .modal-dialog {
+        @media(min-width:$screen-md) {
+            width:800px;
+        }
+    }
     .modal-content {
         background-color:transparent;
         @include box-shadow(none);
@@ -34,7 +39,6 @@
     }
 
     .slider {
-        background:$navy;
         .slick-arrow {
             position:absolute;
             top:40%;
@@ -53,7 +57,6 @@
             background-position:center !important;
             background-size:contain !important;
             background-repeat:no-repeat !important;
-            border:2px solid $coral;
         }
     }
 }
