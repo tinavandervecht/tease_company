@@ -7,9 +7,19 @@ function init() {
         prevArrow: '<button type="button" class="slick-prev"><span class="fa fa-angle-up"></span></button>',
         nextArrow: '<button type="button" class="slick-next"><span class="fa fa-angle-down"></span></button>',
     });
-    
-    var stHeight = $('.review_slider .slick-list').height();
+
+    var height = 0;
     $('.review_slider .review').each(function() {
-        $(this).css('height', stHeight);
+        if ($(this).outerHeight() > height) {
+            height = $(this).outerHeight();
+        }
     });
+
+    $('.review_slider .review').each(function() {
+        $(this).css('height', height);
+    });
+
+    if (height < $('.review_img').outerHeight() - 30) {
+        $('.review_slider').addClass('absolute');
+    }
 }
