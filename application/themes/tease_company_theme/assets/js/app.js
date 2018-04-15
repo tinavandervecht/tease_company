@@ -3,8 +3,6 @@ window.GLOBAL = {
     prevBtn: '<button type="button" class="slick-prev"><span class="fa fa-angle-left"></span></button>'
 }
 
-require('../../../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
-
 var matchHeight = require('./components/matchHeight');
 var navArrows = require('./components/navArrows');
 var map = require('./components/map');
@@ -17,30 +15,30 @@ $(document).ready(function () {
     navArrows.init();
     matchHeight.init();
     map.init();
-
+    
     GalleryListSlider.init();
     MonthlyFavouritesSlider.init();
     ReviewSlider.init();
     SubNavSlider.init();
-
+    
     $("form[name='contact_form']").validate();
-
+    
     $('.mobile_nav_section .fa-close, .mobile_nav_button').on('click', function() {
         $('.mobile_nav_section').toggleClass('open');
         $('.overlay').toggleClass('active');
     });
-
+    
     $('.mobile_nav_section button').on('click', function() {
         $(this).next('.sub_nav').slideToggle('fast');
     })
-
+    
     window.addEventListener('resize', function() {
         if ($(window).width() > 768) {
             $('.mobile_nav_section').removeClass('open');
             $('.overlay').removeClass('active');
         }
     })
-
+    
     $('.pinterest_btn').on('click', function() {
         PinUtils.pinOne({
             'media': $(this).data('pin-media')

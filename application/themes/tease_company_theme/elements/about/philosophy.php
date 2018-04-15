@@ -5,7 +5,7 @@
                 <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-peach.svg" alt="icon">
                 <div class="image_wrapper">
                     <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
-                        data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.jpg">
+                        data-pin-media="<?php echo BASE_URL . $this->getThemePath(); ?>/images/company_photos/hair.jpg">
                         <span class="fa fa-pinterest fa-5x"></span>
                     </button>
                     <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/hair.png"/>
@@ -40,7 +40,7 @@
             <div class="col-md-6 align_image_bottom hidden-xs hidden-sm">
                 <div class="image_wrapper">
                     <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
-                    data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg">
+                    data-pin-media="<?php echo BASE_URL . $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg">
                         <span class="fa fa-pinterest fa-5x"></span>
                     </button>
                     <img src="<?php echo $this->getThemePath(); ?>/images/company_photos/wedding_photo.jpg"/>

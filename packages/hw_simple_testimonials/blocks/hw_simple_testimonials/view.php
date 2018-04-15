@@ -5,7 +5,7 @@
             <div class="image_wrapper">
                 <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-coral.svg" alt="icon" />
                 <button class="pinterest_btn" href="https://www.pinterest.com/pin/create/button/"
-                    data-pin-media="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4764.jpg">
+                    data-pin-media="<?php echo BASE_URL . $this->getThemePath(); ?>/images/company_photos/DSC_4764.jpg">
                     <span class="fa fa-pinterest fa-5x"></span>
                 </button>
                 <img class="review_img" src="<?php echo $this->getThemePath(); ?>/images/company_photos/DSC_4764.jpg" />
