@@ -40,7 +40,8 @@ $u = new User;
 
 <body>
     <div id="main" class="<?php echo $c->getPageWrapperClass()?>">
-    <div class="overlay"></div>
+        <div class="overlay"></div>
+        <div class="overlay _mobile"></div>
     <header id="header">
         <div class="top_bar">
             <div class="container">

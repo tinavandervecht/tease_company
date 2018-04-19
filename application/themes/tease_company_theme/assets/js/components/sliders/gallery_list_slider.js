@@ -22,11 +22,11 @@ function init() {
 
     $('#gallery_slider_modal').on('shown.bs.modal', function () {
         $('#gallery_slider_modal .slider').slick('setPosition');
-        $('.overlay').addClass('active');
+        $('.overlay:not(._mobile)').addClass('active');
     })
 
     $('#gallery_slider_modal').on('hidden.bs.modal', function () {
-        $('.overlay').removeClass('active');
+        $('.overlay:not(._mobile)').removeClass('active');
     })
 
     $('#gallery_slider_modal .slider').on('afterChange', function(event, slick, currentSlide, nextSlide){

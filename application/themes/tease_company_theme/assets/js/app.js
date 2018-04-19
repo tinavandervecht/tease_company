@@ -15,7 +15,7 @@ $(document).ready(function () {
     navArrows.init();
     matchHeight.init();
     map.init();
-    
+
     GalleryListSlider.init();
     MonthlyFavouritesSlider.init();
     ReviewSlider.init();
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $('.mobile_nav_section .close_btn, .mobile_nav_button').on('click', function() {
         $('.mobile_nav_section').toggleClass('open');
-        $('.overlay').toggleClass('active');
+        $('.overlay._mobile').toggleClass('active');
     });
 
     $('.mobile_nav_section button').on('click', function() {
@@ -36,7 +36,7 @@ $(document).ready(function () {
     window.addEventListener('resize', function() {
         if ($(window).width() > 768) {
             $('.mobile_nav_section').removeClass('open');
-            $('.overlay').removeClass('active');
+            $('.overlay._mobile').removeClass('active');
         }
     })
 

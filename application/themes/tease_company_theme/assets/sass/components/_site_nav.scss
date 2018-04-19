@@ -10,6 +10,7 @@ nav {
         border-top:1px solid $navy;
         border-bottom:1px solid $navy;
         z-index:-100;
+        -webkit-transform: translate3d(0,0,0);
 
         .after, .before {
         	bottom: 100%;
