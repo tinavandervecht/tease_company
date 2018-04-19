@@ -27,7 +27,9 @@ $subMenuOpen = false;
 ?>
 
 <nav class="mobile_nav_section">
-    <span class="fa fa-close fa-lg"></span>
+    <span class="close_btn">
+        <img src="<?php echo $this->getThemePath(); ?>/images/icons/menu-close.svg" alt="Close Menu" />
+    </span>
     <ul>
         <li>
             <a
@@ -53,8 +55,10 @@ $subMenuOpen = false;
                 <?php if($ni->cObj->getAttribute('disable_linking') || $ni->hasSubmenu): ?>
                     <button
                         type="button"
+                        class="sub_menu_parent_item"
                     >
                         <?php echo $ni->name; ?>
+                        <img src="<?php echo $this->getThemePath(); ?>/images/icons/menu-arrow.svg" class="sub_menu_arrow" />
                     </button>
                 <?php else: ?>
                     <a

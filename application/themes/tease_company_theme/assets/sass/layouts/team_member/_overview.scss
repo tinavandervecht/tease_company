@@ -1,6 +1,13 @@
 #team_member_overview {
+
+    @media(max-width:$screen-md) {
+        padding-top:80px;
+    }
+
     .team_member_overview {
         position:relative;
+
+
         .content {
             position:relative;
             @media(max-width:$screen-md) {
@@ -19,19 +26,6 @@
             @media(min-width:$screen-sm) {
                 height: 66%;
             }
-        }
-    }
-
-    @media(max-width:$screen-sm) {
-        .member_avatar {
-            max-width:60%;
-            margin:0 auto;
-        }
-    }
-
-    @media(max-width:$screen-xs) {
-        .member_avatar {
-            max-width:100%;
         }
     }
 

@@ -1,12 +1,15 @@
 .mobile_nav_section {
     position:fixed;
+    overflow:scroll;
     top:0;
     left:-100%;
     background:#FFFFFF;
     z-index:5;
     height:100%;
     width:87%;
-    border-right:2px solid $navy;
+    @media(min-width:$screen-sm) {
+        width:50%;
+    }
     @include transition(0.4s);
 
     &.open {
@@ -22,26 +25,50 @@
         li {
             list-style-type:none;
             padding:15px !important;
+            font-weight:600;
 
             button {
                 border:none;
                 background:none;
                 padding:0;
                 margin-bottom:10px;
+                display:block;
+                width:100%;
+                text-align:left;
+            }
+
+            button, a {
+                &:hover, &:focus, &.open {
+                    color:$pink;
+                }
+
+                .sub_menu_arrow {
+                    float:right;
+                    @include rotate(180deg);
+                }
+
+                &.open {
+                    .sub_menu_arrow {
+                        @include rotate(0deg);
+                    }
+                }
             }
         }
     }
 
     .sub_nav {
         display:none;
+        background:$coral;
+        margin-left:-15px;
+        width: -moz-calc(100% + 30px);
+        width: -webkit-calc(100% + 30px);
+        width:calc(100% + 30px);
+        padding-left:20px;
     }
 
-    .fa-close {
-        position:absolute;
-        right:-45px;
-        top:8px;
-        font-size:40px;
+    .close_btn {
+        padding:30px 15px 80px 15px;
+        display:inline-block;
         cursor:pointer;
-        color:$coral;
     }
 }

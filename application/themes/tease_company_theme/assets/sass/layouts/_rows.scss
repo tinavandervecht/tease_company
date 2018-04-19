@@ -23,5 +23,10 @@
                 padding-bottom:0 !important;
             }
         }
+
+        @media(max-width:$screen-md) {
+            padding-left:28px;
+            padding-right:28px;
+        }
     }
 }

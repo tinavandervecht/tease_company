@@ -1,8 +1,17 @@
 #now_booking {
-    position: absolute;
+    position: fixed;
     right: 0;
-    z-index:2;
+    z-index:3;
     margin-top: 10px;
+
+    .ccm-block-edit {
+        padding:$spacing;
+    }
+    
+    .ccm-area-footer {
+        padding:0;
+        margin-top:$spacing * 2;
+    }
 
     .now_booking_wrapper {
         color: #fff;

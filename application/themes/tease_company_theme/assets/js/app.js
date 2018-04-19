@@ -20,25 +20,26 @@ $(document).ready(function () {
     MonthlyFavouritesSlider.init();
     ReviewSlider.init();
     SubNavSlider.init();
-    
+
     $("form[name='contact_form']").validate();
-    
-    $('.mobile_nav_section .fa-close, .mobile_nav_button').on('click', function() {
+
+    $('.mobile_nav_section .close_btn, .mobile_nav_button').on('click', function() {
         $('.mobile_nav_section').toggleClass('open');
         $('.overlay').toggleClass('active');
     });
-    
+
     $('.mobile_nav_section button').on('click', function() {
+        $(this).toggleClass('open');
         $(this).next('.sub_nav').slideToggle('fast');
     })
-    
+
     window.addEventListener('resize', function() {
         if ($(window).width() > 768) {
             $('.mobile_nav_section').removeClass('open');
             $('.overlay').removeClass('active');
         }
     })
-    
+
     $('.pinterest_btn').on('click', function() {
         PinUtils.pinOne({
             'media': $(this).data('pin-media')

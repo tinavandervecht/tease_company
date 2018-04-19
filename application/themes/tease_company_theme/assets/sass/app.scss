@@ -11,29 +11,15 @@ body {
     * Abstracts
     *************************/
     @import 'abstracts/_variables';
-    
+
     @import "compass/css3";
-    
+
     /***********************
     * Node Modules
     *************************/
     @import '../../../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
-    
+
     @import 'base/**/*';
     @import 'components/**/*';
     @import 'layouts/**/*';
 }
-// .block{
-//   width: 100%;
-//   height: 400px;
-//   position: relative;
-//   overflow: hidden;
-// }
-// .img-parallax {
-//   width: 100vmax;
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-//   transform: translate(-50%,0);
-//   pointer-events: none
-// }

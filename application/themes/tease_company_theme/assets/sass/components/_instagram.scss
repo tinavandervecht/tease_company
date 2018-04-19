@@ -1,6 +1,6 @@
 .insta-img {
     float:left;
-    width:16.66667%;
+    width:10%;
     span {
         display:block;
         height:100px;
@@ -10,7 +10,7 @@
         background-position:center !important;
 
         @media(min-width:$screen-md) {
-            height:200px;
+            height:140px;
         }
     }
 }

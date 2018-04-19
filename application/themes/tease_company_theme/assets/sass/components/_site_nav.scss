@@ -36,6 +36,13 @@ nav {
         	margin-left: -21px;
         }
 
+        @media(min-width:$screen-md) {
+            .sub_nav_slider {
+                width:80%;
+                margin:0 auto;
+            }
+        }
+
         .sub_nav_item {
             max-width:170px;
             margin: 20px auto;
@@ -109,11 +116,11 @@ nav {
         }
 
         .slick-prev {
-            left:-20px;
+            left:-70px;
         }
 
         .slick-next {
-            right:-20px;
+            right:-70px;
         }
     }
 
@@ -148,7 +155,7 @@ nav {
 
             &:hover {
                 .sub-nav {
-                    z-index:2;
+                    z-index:4;
                 }
             }
         }

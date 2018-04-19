@@ -1,0 +1,7 @@
+&.page-template-about {
+    #intro {
+        @media (max-width:$screen-md) {
+            padding-top:80px;
+        }
+    }
+}

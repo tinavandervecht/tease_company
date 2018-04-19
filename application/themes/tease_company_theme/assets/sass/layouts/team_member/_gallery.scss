@@ -1,6 +1,10 @@
 .gallery_list_slider {
     .gallery_item {
         border:5px solid $coral;
+
+        @media(max-width:$screen-md) {
+            margin-bottom:$spacing * 2;
+        }
     }
 
     .slick-arrow {

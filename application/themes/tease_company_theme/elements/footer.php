@@ -2,7 +2,7 @@
 
 <footer>
     <?php
-        $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=3161985210.3859308.f07d425c9cdf4295a6b5a7f5ca13f498&count=12');
+        $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=3161985210.3859308.f07d425c9cdf4295a6b5a7f5ca13f498&count=20');
         $obj = json_decode($json);
     ?>
 
@@ -30,9 +30,9 @@ if(!$u->isLoggedIn() || $u->isLoggedIn() && !$u->superUser) : ?>
     async defer
     src="//assets.pinterest.com/js/pinit.js"
 ></script>
-<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/slick.js"></script>
-<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/matchHeight.js"></script>
-<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/vendors/slick.js"></script>
+<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/vendors/bootstrap-modal.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/vendors/jquery.validate.min.js"></script>
 <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/app.js"></script>
 </div>
 <?php if (isset($_SESSION['contact_form']['errors'])) : ?>

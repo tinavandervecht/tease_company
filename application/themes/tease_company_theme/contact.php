@@ -5,7 +5,7 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <div id="map"></div>
 
-<section class="section_padding large_line_height">
+<section class="section_padding _small large_line_height">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-push-8">
@@ -14,7 +14,8 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
                     $a->display($c);
                 ?>
             </div>
-            <div class="col-md-8 col-md-pull-4">
+            <div class="col-md-1"></div>
+            <div class="col-md-7 col-md-pull-5">
                 <?php
                     $a = new Area('Main Contact');
                     $a->display($c);

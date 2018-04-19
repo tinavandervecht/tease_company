@@ -46,12 +46,14 @@ $u = new User;
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="mobile_nav_button hidden-md hidden-lg fa fa-navicon fa-lg"></div>
+                        <div class="mobile_nav_button hidden-md hidden-lg">
+                            <img src="<?php echo $this->getThemePath(); ?>/images/icons/menu.svg" alt="Menu Icon" />
+                        </div>
                         <div class="logo_icon">
                             <img src="<?php echo $this->getThemePath(); ?>/images/logos/icon.svg" alt="Tease + Company Logo" />
                         </div>
                         <div class="social_icons">
-                            <a href="https://www.instagram.com/hairbysarab1/" target="_blank">
+                            <a href="https://www.instagram.com/teaseandcompany/" target="_blank">
                                 <span class="fa fa-instagram fa-lg"></span>
                             </a>
                             <a href="https://www.facebook.com/teaseandcompany" target="_blank">
@@ -88,10 +90,10 @@ $u = new User;
         </div>
     </header>
     <div id="now_booking">
-        <?php
-            $a = new GlobalArea('Now Booking');
-            $a->setBlockWrapperStart('<div class="now_booking_wrapper">');
-            $a->setBlockWrapperEnd('</div>');
-            $a->display();
-        ?>
+        <div class="now_booking_wrapper">
+            <?php
+                $a = new GlobalArea('Now Booking');
+                $a->display();
+            ?>
+        </div>
     </div>
