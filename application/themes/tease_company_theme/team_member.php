@@ -37,8 +37,10 @@ $page = Page::getCurrentPage();
             </div>
             <?php if ($page->getAttribute('avatar')): ?>
                 <div class="col-sm-5 col-sm-pull-7 p-r-0 match_height align_image_bottom">
-                    <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-pink.svg" alt="icon">
-                    <img class="member_avatar" src="<?php echo $page->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" />
+                    <div class="image_wrapper">
+                        <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-pink.svg" alt="icon">
+                        <img class="member_avatar" src="<?php echo $page->getAttribute('avatar')->getVersion()->getRelativePath(); ?>" />
+                    </div>
                 </div>
             <?php endif; ?>
         </div>
