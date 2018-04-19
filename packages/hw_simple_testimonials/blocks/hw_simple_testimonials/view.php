@@ -30,7 +30,7 @@
                             </p>
                         <?php endif; ?>
                         <?php if(strlen($tl->testimonial)>0) : ?>
-                            <p>
+                            <p class="testimonial">
                                 <?php echo t($tl->testimonial)?>
                             </p>
                         <?php endif; ?>
