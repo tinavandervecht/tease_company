@@ -4,27 +4,46 @@
         padding-top:80px;
     }
 
+    .avatar {
+        @media(min-width:$screen-md) {
+            padding-right:$spacing * 2;
+            max-width: 45%;
+            float:left;
+        }
+    }
+
+    .service_link {
+        color:$salmonPink !important;
+    }
+
+    .overview_wrapper {
+        &:before {
+            content: '';
+            position:absolute;
+            width:100%;
+            height:75%;
+            bottom:0;
+            right:0;
+            background: $coral;
+
+            @media(min-width:$screen-md) {
+                height: 66%;
+                width:75%;
+            }
+        }
+
+        .overview_content {
+            z-index:2;
+        }
+    }
+
     .team_member_overview {
         position:relative;
-
 
         .content {
             position:relative;
             @media(max-width:$screen-md) {
                 padding-top:$spacing;
-            }
-        }
-        &:before {
-            content: '';
-            position:absolute;
-            width:100%;
-            height:100%;
-            bottom:0;
-            right:0;
-            background: $coral;
-
-            @media(min-width:$screen-sm) {
-                height: 66%;
             }
         }
     }

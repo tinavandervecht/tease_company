@@ -45,7 +45,29 @@ $(document).ready(function () {
             'media': $(this).data('pin-media')
         });
     })
+
+    $('.hash_link').on('click', function(e) {
+        var currentBaseUrl = BASE_URL + window.location.pathname;
+        var linkBaseUrl = $(this).attr('href').split('#')[0];
+
+        if (currentBaseUrl == linkBaseUrl) {
+            e.preventDefault();
+            scrollPage('#' + $(this).attr('href').split("#").pop());
+        }
+    })
+
+    if(window.location.href.indexOf("prices") > -1 && window.location.href.indexOf("#") > -1) {
+        scrollPage(window.location.hash);
+    }
 });
+
+function scrollPage(hash) {
+    var updatedHash = hash.replace(/\-/g, '_');
+
+    var topPosition = $(updatedHash + '_section').offset().top - 50;
+
+    $("html, body").animate({ scrollTop: topPosition });
+}
 
 $('.image_area').each(function(){
     var img = $('.image', this);

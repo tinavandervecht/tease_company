@@ -33,7 +33,9 @@
                                 <div class="description large_line_height">
                                     <h2>
                                         <em><?php echo $monthlyFavourite->getCollectionName(); ?></em>
-                                        <small class="pull-right">$<?php echo $monthlyFavourite->getAttribute('price'); ?></small>
+                                        <?php if ($monthlyFavourite->getAttribute('price')): ?>
+                                            <small class="pull-right">$<?php echo $monthlyFavourite->getAttribute('price'); ?></small>
+                                        <?php endif; ?>
                                     </h2>
                                     <p>
                                         <?php echo $monthlyFavourite->getAttribute('type'); ?>

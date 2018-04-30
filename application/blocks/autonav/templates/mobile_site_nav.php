@@ -42,7 +42,7 @@ $subMenuOpen = false;
         <?php foreach ($navItems as $i => $ni) : ?>
             <?php if ($ni->cObj->getAttribute('page_links_to_parent_section')) :
                 $parent = Page::getByID($ni->cObj->cParentID);
-                $url = $parent->cPath . '#' . str_replace(' ', '_', strtolower($ni->name));
+                $url = $parent->cPath . '#' . str_replace(' ', '-', strtolower($ni->name));
             else :
                 $url = $ni->url;
             endif; ?>
