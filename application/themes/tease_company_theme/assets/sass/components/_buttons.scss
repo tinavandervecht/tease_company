@@ -1,4 +1,4 @@
-button[type="submit"] {
+button[type="submit"], .style_button {
     background: none;
     color: $salmonPink;
     @include border-radius(unset);

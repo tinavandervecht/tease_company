@@ -12,8 +12,16 @@
         }
     }
 
-    .service_link_area a {
-        color:$salmonPink !important;
+    .service_link_area {
+        margin-top:$spacing * 2;
+        a {
+            border:2px solid;
+            border-color:$salmonPink;
+            @extend .style_button;
+            padding-left:20px;
+            padding-right:20px;
+            margin:0 5px;
+        }
     }
 
     .overview_wrapper {
