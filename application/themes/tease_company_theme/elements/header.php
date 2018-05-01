@@ -34,6 +34,12 @@ $u = new User;
         var CCM_LOGGED_IN = <?php if($u->isLoggedIn()) : ?> true <?php else : ?> false <?php endif; ?>;
         var PAGE_ID = "<?php echo $c->getCollectionID(); ?>";
     </script>
+    <?php if ($c->getCollectionAttributeValue('page_links_to_parent_section')) :
+        $parent = Page::getByID($c->getCollectionParentID());
+        $nh = Loader::helper('navigation');
+        $url = $nh->getLinkToCollection($parent) . '#' . str_replace(' ', '-', strtolower($c->getCollectionName()));
+        header('Location: ' . $url);
+    endif; ?>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWEKqRmvJ7h5x3R0yP7jYKnN4qHz5UzD4&v=3&libraries=geometry"></script>
 </head>
 

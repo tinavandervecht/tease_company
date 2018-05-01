@@ -39,9 +39,12 @@ $page = Page::getCurrentPage();
                                         </li>
                                     <?php endif;?>
                                 </ul>
-                                <?php if($page->getAttribute('service_link')): ?>
-                                    <a href="<?php echo $page->getAttribute('service_link'); ?>" class="service_link">View Services</a>
-                                <?php endif; ?>
+                                <div class="service_link_area">
+                                    <?php
+                                        $a = new Area('Service Links Area');
+                                        $a->display($c);
+                                    ?>
+                                </div>
                             </div>
                             <?php echo $page->getAttribute('wysiwyg_description'); ?>
                         </div>
