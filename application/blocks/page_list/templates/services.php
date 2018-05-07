@@ -26,14 +26,23 @@ defined('C5_EXECUTE') or die('Access Denied.'); ?>
     ?>
 
     <?php foreach ($services as $service): ?>
-        <div class="service_item">
-            <div class="name">
-                <?php echo $service->getCollectionName();  ?>
+        <?php if($service->getCollectionName()) : ?>
+            <div class="service_item">
+                <div class="name">
+                    <?php echo $service->getCollectionName();  ?>
+                </div>
+                <div class="breakline"></div>
+                <div class="price">
+                    $<?php echo $service->getAttribute('price'); ?>+
+                </div>
             </div>
-            <div class="breakline"></div>
-            <div class="price">
-                $<?php echo $service->getAttribute('price'); ?>+
-            </div>
-        </div>
+            <?php if($service->getCollectionDescription()) : ?>
+            <p>
+                <?php echo $service->getCollectionDescription(); ?>
+            </p>
+            <?php endif; ?>
+        <?php else: ?>
+            <br />
+        <?php endif; ?>
     <?php endforeach; ?>
 <?php endforeach; ?>
