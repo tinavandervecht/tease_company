@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
     })
 
-    if(window.location.href.indexOf("prices") > -1 && window.location.href.indexOf("#") > -1) {
+    if(window.location.href.indexOf("services") > -1 && window.location.href.indexOf("#") > -1) {
         scrollPage(window.location.hash);
     }
 });

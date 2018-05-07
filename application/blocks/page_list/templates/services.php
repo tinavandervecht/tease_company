@@ -1,5 +1,7 @@
 <?php
-defined('C5_EXECUTE') or die('Access Denied.'); ?>
+defined('C5_EXECUTE') or die('Access Denied.');
+$nh = Loader::helper('navigation');
+?>
 
 <h1 class="services_page_list_title">
     <img class="icon" src="<?php echo $this->getThemePath(); ?>/images/icons/heart-coral.svg" alt="icon">
@@ -9,10 +11,13 @@ defined('C5_EXECUTE') or die('Access Denied.'); ?>
     *** all prices are subject to tax ***
 </p>
 <?php foreach ($pages as $i => $page) : ?>
-    <h2 class="service_title h1 text-primary"
+    <h2 class="service_title h1 text-primary clearfix"
      id="<?php echo str_replace(' ', '_', strtolower($page->getCollectionName())); ?>_section"
      >
-        <em><strong><?php echo $page->getCollectionName();  ?></strong></em>
+        <em class="pull-left"><strong><?php echo $page->getCollectionName();  ?></strong></em>
+        <?php if (! $page->getCollectionAttributeValue('page_links_to_parent_section')): ?>
+            <a class="style_button pull-left" href="<?php echo $nh->getCollectionURL($page); ?>">View more details</a>
+        <?php endif; ?>
     </h2>
     <p>
         <?php echo $page->getCollectionDescription(); ?>

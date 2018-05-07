@@ -3,6 +3,8 @@ button[type="submit"], .style_button {
     color: $salmonPink;
     @include border-radius(unset);
     border-width: 2px;
+    border-style:solid;
+    border-color:$salmonPink;
     padding: 5px 40px;
     font-style: italic;
     font-weight: bold;
