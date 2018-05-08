@@ -66,7 +66,7 @@ function scrollPage(hash) {
 
     var topPosition = $(updatedHash + '_section').offset().top - 50;
 
-    $("html, body").animate({ scrollTop: topPosition });
+    $("html, body").animate({ scrollTop: topPosition }, 1000);
 }
 
 $('.image_area').each(function(){

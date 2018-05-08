@@ -16,7 +16,7 @@ $nh = Loader::helper('navigation');
      >
         <em class="pull-left"><strong><?php echo $page->getCollectionName();  ?></strong></em>
         <?php if (! $page->getCollectionAttributeValue('page_links_to_parent_section')): ?>
-            <a class="style_button pull-left" href="<?php echo $nh->getCollectionURL($page); ?>">View more details</a>
+            <a class="style_button pull-left" href="<?php echo $nh->getCollectionURL($page); ?>">Learn more</a>
         <?php endif; ?>
     </h2>
     <p>

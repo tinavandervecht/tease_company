@@ -11,7 +11,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
 </p>
 <?php foreach ($pages as $i => $page) : ?>
     <?php if($page->getCollectionName()) : ?>
-        <div class="service_item">
+        <div class="service_item detailed_services_item">
             <div class="name">
                 <?php echo $page->getCollectionName();  ?>
             </div>
