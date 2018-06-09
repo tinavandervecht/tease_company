@@ -10,6 +10,7 @@ return array(
     'URLify' => array($vendorDir . '/voku/urlify'),
     'Sunra\\PhpSimple\\HtmlDomParser' => array($vendorDir . '/sunra/php-simple-html-dom-parser/Src'),
     'ProxyManager\\' => array($vendorDir . '/ocramius/proxy-manager/src'),
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Primal\\Color' => array($vendorDir . '/primal/color/lib'),
     'Pagerfanta\\' => array($vendorDir . '/pagerfanta/pagerfanta/src'),
     'OAuth\\Unit' => array($vendorDir . '/lusitanian/oauth/tests'),

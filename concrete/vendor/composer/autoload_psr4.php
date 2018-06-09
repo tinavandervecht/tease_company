@@ -7,6 +7,7 @@ $baseDir = dirname(dirname($vendorDir));
 
 return array(
     'voku\\' => array($vendorDir . '/voku/portable-utf8/src/voku'),
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
     'Zend\\Validator\\' => array($vendorDir . '/zendframework/zend-validator/src'),
     'Zend\\Uri\\' => array($vendorDir . '/zendframework/zend-uri/src'),
     'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
@@ -24,6 +25,7 @@ return array(
     'Zend\\Cache\\' => array($vendorDir . '/zendframework/zend-cache/src'),
     'Wikimedia\\Composer\\' => array($vendorDir . '/wikimedia/composer-merge-plugin/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'TrueBV\\' => array($vendorDir . '/true/punycode/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),

@@ -40,9 +40,9 @@ class ContactForm extends AbstractController
 
         // Mail config
         $this->config->emailSubject              = "Tease & Company - Contact Form";
-        $this->config->emailTo                   = "Tina Vandervecht <tvandervecht@gmail.com>";  //Note: if sending to an email provided via the submission data, that would be done like so: $this->post('email_address')
+        $this->config->emailTo                   = "teaseandcompany1@gmail.com";  //Note: if sending to an email provided via the submission data, that would be done like so: $this->post('email_address')
         $this->config->emailReplyTo              = "noreply@teaseandcompany.com";
-        $this->config->emailFrom                 = "tina-lovabal506@hotmail.com";
+        $this->config->emailFrom                 = "submission@teaseandcompany.com";
         $this->config->emailConfirmationSubject  = "Thanks for your Submission!";
 
         // Concrete5 Database Loader
