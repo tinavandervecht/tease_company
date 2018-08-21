@@ -30,6 +30,8 @@ class ContactForm extends AbstractController
                                                     `name` varchar(255) DEFAULT NULL,
                                                     `subject` varchar(255) DEFAULT NULL,
                                                     `message` text DEFAULT NULL,
+                                                    `email` varchar(255) DEFAULT NULL,
+                                                    `phone_number` varchar(255) DEFAULT NULL,
                                                     `honeypot` text DEFAULT NULL,
                                                     `recipients` text DEFAULT NULL,
                                                     `date_created` datetime DEFAULT NULL,
@@ -121,6 +123,8 @@ class ContactForm extends AbstractController
         $body .= '<strong><i>Submitted Data:</i></strong><br>';
         $body .= '<strong>Name:</strong> '.$this->submission['name'].'<br>';
         $body .= '<strong>Subject:</strong> '.$this->submission['subject'].'<br>';
+        $body .= '<strong>Email:</strong> '.$this->submission['email'].'<br>';
+        $body .= '<strong>Phone Number:</strong> '.$this->submission['phone_number'].'<br>';
         $body .= '<strong>How can we help you?</strong><br />'.$this->submission['message'];
         $body .= '<br /><br />';
         $body .= '<strong>Submitted at:</strong> '.$this->submission['date_created'];
@@ -401,6 +405,10 @@ class ContactForm extends AbstractController
         }
         if ($this->submission['subject'] == '') {
             $errors['subject']['empty'] = "This field is required.";
+        }
+        if ($this->submission['email'] == '' && $this->submission['phone_number'] == '') {
+            $errors['email']['empty'] = "Either an email or phone number is required.";
+            $errors['phone_number']['empty'] = "Either an email or phone number is required.";
         }
         if ($this->submission['message'] == '') {
             $errors['message']['empty'] = "This field is required.";

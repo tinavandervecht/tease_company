@@ -26,6 +26,14 @@ else : ?>
                 <label for="subject" class="sr-only">subject</label>
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="subject" required="required" />
             </div>
+            <div class="form-group _email">
+                <label for="subject" class="sr-only">email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email" required="required" />
+            </div>
+            <div class="form-group _phoneNumber">
+                <label for="subject" class="sr-only">phone number</label>
+                <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="phone number" required="required" />
+            </div>
             <div class="form-group _message">
                 <label for="message" class="sr-only">message</label>
                 <textarea id="message" name="message" class="form-control" placeholder="how can we help you?" required="required" rows="7"></textarea>
