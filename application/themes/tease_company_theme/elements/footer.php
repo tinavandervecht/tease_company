@@ -1,23 +1,5 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-<footer>
-    <?php
-        $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=3161985210.3859308.f07d425c9cdf4295a6b5a7f5ca13f498&count=20');
-        $obj = json_decode($json);
-    ?>
-
-    <?php foreach($obj->data as $key => $item): ?>
-        <div class="insta-img">
-            <a href="<?php echo $item->link; ?>" target="_blank">
-                <span class="insta-img"
-                    style="background:url(<?php echo $item->images->standard_resolution->url; ?>)"
-                >
-                </span>
-            </a>
-        </div>
-    <?php endforeach; ?>
-</footer>
-
 <?php View::element('footer_required'); ?>
 
 <?php
